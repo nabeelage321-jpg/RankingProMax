@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranking Pro Max — Local SEO Agency Farmingdale NY | Farmingdale NY SEO Company</title>
+<meta name="description" content="Ranking Pro Max is the local SEO agency Farmingdale NY businesses call — a Farmingdale NY SEO company providing Google Business Profile management, local SEO services, citations, AI chatbots, websites, and social media management near Main Street, Route 109, and Route 110. Based at 8 Carmans Ct, Farmingdale, NY 11735 (ZIP code 11735).">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600;1,800&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════
+   RANKING PRO MAX — MOBILE-FIRST STYLESHEET
+   Breakpoints: 480px | 640px | 768px | 1024px
+═══════════════════════════════════════════════ */
+:root{
+  --ink:#16213A; --cream:#E3E0D6; --rust:#C97A2B;
+  --gold:#F0C674; --sage:#3D5A80; --pale:#EEECE5;
+  --mid:#5B6472; --border:rgba(22,33,58,0.13); --nav-h:60px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%;}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--pale);color:var(--ink);overflow-x:hidden;max-width:100vw;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;height:auto;}
+button{font-family:'IBM Plex Sans',sans-serif;}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 1rem;background:rgba(250,248,243,.96);
+  backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s;}
+#nav.shadow{box-shadow:0 4px 40px rgba(0,0,0,.07);}
+.logo{font-family:'Big Shoulders Display',sans-serif;font-size:1.4rem;letter-spacing:.04em;cursor:pointer;}
+.logo span{color:var(--rust);}
+.nav-links{display:none;}
+.nav-cta{display:none;}
+.hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;
+  padding:.5rem;background:none;border:none;min-width:44px;min-height:44px;
+  justify-content:center;align-items:center;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink);transition:all .28s;}
+.hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.active span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* ── MOBILE MENU ── */
+.mobile-menu{display:none;position:fixed;inset:0;top:var(--nav-h);
+  background:var(--pale);z-index:600;padding:2rem 1.5rem 5rem;
+  flex-direction:column;gap:0;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mob-link{font-family:'Big Shoulders Display',sans-serif;font-size:2rem;letter-spacing:.04em;
+  color:var(--ink);cursor:pointer;padding:.6rem 0;border-bottom:1px solid var(--border);
+  display:block;width:100%;}
+.mob-link:hover,.mob-link:active{color:var(--rust);}
+.mob-cta{background:var(--rust);color:#fff!important;padding:1rem;
+  border-radius:2px;text-align:center;margin-top:1rem;font-size:1.1rem;}
+.mobile-contact{display:flex;flex-direction:column;gap:.8rem;padding-top:1.5rem;margin-top:.5rem;}
+.mobile-contact a{font-family:'IBM Plex Sans',sans-serif;font-size:.95rem;color:var(--mid);
+  display:flex;align-items:center;gap:.5rem;}
+
+/* ── VIEWS ── */
+.view{display:none;padding-top:var(--nav-h);}
+.view.active{display:block;}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.8rem 1.5rem;font-size:.82rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;border-radius:2px;cursor:pointer;border:none;
+  transition:all .2s;min-height:48px;touch-action:manipulation;white-space:nowrap;}
+.btn-r{background:var(--rust);color:#fff;}
+.btn-r:hover{background:#a83820;}
+.btn-k{background:transparent;color:var(--ink);border:1.5px solid var(--ink);}
+.btn-k:hover{background:var(--ink);color:#fff;}
+.btn-g{background:var(--sage);color:#fff;}
+.btn-g:hover{background:#3a5231;}
+.btn-w{background:#fff;color:var(--rust);font-weight:700;}
+.btn-w:hover{background:var(--cream);}
+.btns{display:flex;flex-direction:column;gap:.75rem;width:100%;}
+.btns .btn{width:100%;}
+
+/* ── TYPOGRAPHY ── */
+.tag,.s-label{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;
+  font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin-bottom:.8rem;}
+.tag::before,.s-label::before{content:'';width:18px;height:2px;background:var(--rust);flex-shrink:0;}
+.s-label.gold{color:var(--gold);}.s-label.gold::before{background:var(--gold);}
+.h1,.s-h2{font-family:'Big Shoulders Display',sans-serif;line-height:.95;letter-spacing:.02em;}
+.h1{font-size:clamp(3rem,11vw,7rem);margin-bottom:1.4rem;}
+.h1 em,.s-h2 em{font-family:'Big Shoulders Display',sans-serif;font-style:italic;color:var(--rust);}
+.s-h2{font-size:clamp(2rem,8vw,4.5rem);}
+.s-h2.light{color:var(--cream);}.s-h2.light em{color:var(--gold);}
+.sub{font-size:.95rem;line-height:1.75;color:var(--mid);margin-bottom:2rem;}
+
+/* ── HERO ── */
+.hero{display:flex;flex-direction:column;min-height:calc(100vh - var(--nav-h));}
+.hero-l{padding:2.5rem 1.2rem 2rem;display:flex;flex-direction:column;justify-content:center;}
+.hero-r{background:var(--ink);min-height:220px;display:flex;align-items:center;
+  justify-content:center;position:relative;overflow:hidden;}
+.hero-r-bg{position:absolute;inset:0;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,.04) 40px),
+  repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,.04) 40px);}
+.hero-r-content{position:relative;z-index:2;text-align:center;padding:2rem 1.5rem;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;
+  margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);}
+.stat-n{font-family:'Big Shoulders Display',sans-serif;font-size:1.8rem;line-height:1;}
+.stat-n span{color:var(--rust);}
+.stat-l{font-size:.62rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-top:.2rem;}
+
+/* ── RANK GAUGE (signature element) ── */
+.rank-gauge{width:100%;max-width:340px;margin:0 auto 1.2rem;}
+.rank-ticks{display:flex;justify-content:space-between;padding:0 2px 5px;}
+.rank-ticks span{width:1px;height:6px;background:rgba(255,255,255,.18);}
+.rank-track{position:relative;display:flex;height:52px;border:1px solid rgba(255,255,255,.16);overflow:visible;background:rgba(255,255,255,.02);}
+.rank-zone{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:'IBM Plex Mono',monospace;font-size:.56rem;letter-spacing:.05em;text-transform:uppercase;
+  color:rgba(255,255,255,.28);border-right:1px solid rgba(255,255,255,.1);padding:0 .3rem;}
+.rank-zone:last-child{border-right:none;}
+.rank-zone.target{color:var(--gold);font-weight:600;}
+.rank-marker{position:absolute;top:-10px;width:0;height:0;border-left:7px solid transparent;
+  border-right:7px solid transparent;border-top:11px solid var(--gold);
+  filter:drop-shadow(0 2px 6px rgba(240,198,116,.45));animation:rankMove 2.6s cubic-bezier(.4,0,.2,1) forwards;}
+@keyframes rankMove{0%{left:2%;}100%{left:81%;}}
+.rank-caption{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.07em;
+  text-transform:uppercase;color:rgba(255,255,255,.32);text-align:center;margin-top:.8rem;}
+.hero-kpi{color:rgba(255,255,255,.4);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;}
+.hero-kpi-n{font-family:'Big Shoulders Display',sans-serif;font-size:2.8rem;color:#fff;line-height:1;}
+.hero-kpi-n span{color:var(--gold);}
+.live-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.7);
+  padding:.4rem .9rem;border-radius:100px;font-size:.68rem;letter-spacing:.05em;margin-top:.8rem;}
+.dot{width:6px;height:6px;background:#4ade80;border-radius:50%;animation:blink 1.5s ease infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.2;}}
+
+/* ── TICKER ── */
+.ticker-bar{background:var(--ink);padding:.55rem 0;overflow:hidden;white-space:nowrap;}
+.ticker{display:inline-block;animation:tick 35s linear infinite;}
+.t-item{display:inline-flex;align-items:center;gap:.7rem;color:var(--cream);
+  font-size:.68rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;margin-right:2.5rem;}
+.t-sep{color:var(--rust);}
+@keyframes tick{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* ── CARDS ── */
+.grid-border{display:grid;background:var(--border);gap:1.5px;border:1.5px solid var(--border);}
+.grid-border.dark{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.07);}
+.card{background:var(--pale);padding:1.6rem 1.4rem;transition:background .2s;}
+.card:hover{background:var(--cream);}
+.card.dark{background:var(--ink);}
+.card.dark:hover{background:#131313;}
+
+/* ── SERVICES HOME ── */
+.services-sec{padding:3.5rem 1.2rem;background:var(--ink);}
+.services-hdr{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;}
+.svc-grid{grid-template-columns:1fr;}
+.svc-num{font-family:'Big Shoulders Display',sans-serif;font-size:.78rem;color:rgba(255,255,255,.2);
+  letter-spacing:.1em;display:block;margin-bottom:1rem;}
+.svc-em{font-size:1.6rem;display:block;margin-bottom:.8rem;}
+.svc-card h3{font-family:'Big Shoulders Display',sans-serif;font-size:1.15rem;letter-spacing:.03em;margin-bottom:.5rem;color:#fff;}
+.svc-card p{font-size:.8rem;line-height:1.65;color:rgba(255,255,255,.42);}
+.svc-arrow{display:inline-flex;align-items:center;gap:.35rem;font-size:.7rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--rust);margin-top:1rem;
+  opacity:0;transform:translateX(-8px);transition:opacity .2s,transform .2s;}
+.svc-card:hover .svc-arrow{opacity:1;transform:translateX(0);}
+.svc-card{cursor:pointer;position:relative;overflow:hidden;}
+.svc-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:var(--rust);transform:scaleX(0);transform-origin:left;transition:transform .3s;}
+.svc-card:hover::before{transform:scaleX(1);}
+
+/* ── CITIES HOME ── */
+.cities-sec{padding:3.5rem 1.2rem;background:var(--cream);}
+.cities-hdr{margin-bottom:2.5rem;}
+.city-grid{grid-template-columns:1fr 1fr;}
+.city-card{padding:1.2rem 1rem;cursor:pointer;}
+.city-name{font-family:'Big Shoulders Display',sans-serif;font-size:1rem;letter-spacing:.04em;margin-bottom:.2rem;}
+.city-county{font-size:.65rem;color:var(--mid);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.4rem;}
+.city-pop{font-size:.72rem;color:var(--mid);}
+.city-badge{display:inline-block;font-size:.58rem;font-weight:600;letter-spacing:.07em;
+  text-transform:uppercase;padding:.2rem .5rem;border-radius:2px;margin-top:.5rem;}
+.badge-hot{background:rgba(200,75,47,.12);color:var(--rust);}
+.badge-med{background:rgba(74,103,65,.12);color:var(--sage);}
+
+/* ── CITY PAGE ── */
+.city-hero{background:var(--ink);padding:2.5rem 1.2rem;display:flex;flex-direction:column;gap:2rem;}
+.city-breadcrumb{font-size:.65rem;color:rgba(255,255,255,.35);letter-spacing:.07em;text-transform:uppercase;margin-bottom:1rem;line-height:1.8;}
+.city-breadcrumb span{color:rgba(255,255,255,.6);cursor:pointer;}
+.city-breadcrumb span:hover{color:#fff;}
+.city-h1{font-family:'Big Shoulders Display',sans-serif;font-size:clamp(2rem,9vw,5.5rem);line-height:.95;
+  letter-spacing:.02em;color:#fff;margin-bottom:1rem;}
+.city-h1 em{font-family:'Big Shoulders Display',sans-serif;font-style:italic;color:var(--gold);}
+.city-desc{font-size:.88rem;line-height:1.75;color:rgba(255,255,255,.5);margin-bottom:1.5rem;}
+.city-hero-r{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:1.5rem;}
+.city-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:rgba(255,255,255,.06);margin-bottom:1.2rem;}
+.city-stat{background:rgba(255,255,255,.03);padding:1.2rem 1rem;}
+.city-stat-n{font-family:'Big Shoulders Display',sans-serif;font-size:1.6rem;color:#fff;line-height:1;}
+.city-stat-n.rust{color:var(--rust);}.city-stat-n.gold{color:var(--gold);}
+.city-stat-l{font-size:.62rem;color:rgba(255,255,255,.35);letter-spacing:.07em;text-transform:uppercase;margin-top:.2rem;}
+.city-services-sec{padding:3rem 1.2rem;}
+.city-svc-grid{grid-template-columns:1fr;}
+.city-svc-card{padding:1.5rem 1.3rem;cursor:pointer;border-left:3px solid transparent;transition:border-color .2s,background .2s;}
+.city-svc-card:hover{border-left-color:var(--rust);}
+.city-svc-em{font-size:1.6rem;margin-bottom:.8rem;display:block;}
+.city-svc-card h3{font-family:'Big Shoulders Display',sans-serif;font-size:1.1rem;letter-spacing:.03em;margin-bottom:.4rem;}
+.city-svc-card p{font-size:.8rem;line-height:1.65;color:var(--mid);}
+.city-svc-price{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--rust);margin-top:.6rem;}
+.city-svc-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--sage);margin-top:.4rem;
+  opacity:0;transform:translateX(-6px);transition:all .2s;}
+.city-svc-card:hover .city-svc-link{opacity:1;transform:translateX(0);}
+
+/* ── SERVICE PAGE ── */
+.svc-hero{padding:2.5rem 1.2rem;display:flex;flex-direction:column;gap:2rem;
+  background:var(--pale);border-bottom:1px solid var(--border);}
+.svc-h1{font-family:'Big Shoulders Display',sans-serif;font-size:clamp(2rem,9vw,5rem);line-height:.95;letter-spacing:.02em;margin-bottom:1rem;}
+.svc-h1 em{font-family:'Big Shoulders Display',sans-serif;font-style:italic;color:var(--rust);}
+.svc-long{font-size:.9rem;line-height:1.8;color:var(--mid);margin-bottom:1.5rem;}
+.benefits-box{background:var(--ink);padding:1.5rem;color:var(--cream);}
+.benefits-box h4{font-family:'Big Shoulders Display',sans-serif;font-size:.95rem;letter-spacing:.08em;margin-bottom:1rem;color:var(--gold);}
+.benefits-list{list-style:none;}
+.benefits-list li{display:flex;align-items:flex-start;gap:.65rem;font-size:.82rem;
+  padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.7);}
+.benefits-list li::before{content:'✓';flex-shrink:0;width:17px;height:17px;background:var(--sage);
+  color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:.58rem;font-weight:700;margin-top:1px;}
+.city-coverage{padding:3rem 1.2rem;background:var(--cream);}
+.coverage-grid{grid-template-columns:1fr 1fr 1fr;}
+.cov-card{padding:1rem .9rem;cursor:pointer;text-align:center;}
+.cov-city{font-family:'Big Shoulders Display',sans-serif;font-size:.9rem;letter-spacing:.04em;}
+.cov-county{font-size:.62rem;color:var(--mid);text-transform:uppercase;letter-spacing:.06em;}
+
+/* ── PROGRAMMATIC PAGE ── */
+.pg-hero{background:var(--ink);padding:2.5rem 1.2rem 2rem;position:relative;overflow:hidden;}
+.pg-hero::before{content:attr(data-word);position:absolute;font-family:'Big Shoulders Display',sans-serif;
+  font-size:22vw;color:rgba(255,255,255,.025);top:50%;left:50%;
+  transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;}
+.pg-breadcrumb{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.07em;text-transform:uppercase;
+  margin-bottom:1.5rem;position:relative;z-index:2;line-height:1.8;}
+.pg-breadcrumb span{color:rgba(255,255,255,.55);cursor:pointer;transition:color .2s;}
+.pg-breadcrumb span:hover{color:#fff;}
+.pg-h1{font-family:'Big Shoulders Display',sans-serif;font-size:clamp(2rem,9vw,6rem);line-height:.93;
+  letter-spacing:.02em;color:#fff;margin-bottom:1.2rem;position:relative;z-index:2;}
+.pg-h1 em{font-family:'Big Shoulders Display',sans-serif;font-style:italic;color:var(--gold);}
+.pg-meta{display:flex;flex-direction:column;gap:.5rem;margin-bottom:2rem;position:relative;z-index:2;}
+.pg-meta-item{display:flex;align-items:center;gap:.5rem;font-size:.75rem;color:rgba(255,255,255,.45);}
+.pg-meta-item strong{color:rgba(255,255,255,.8);}
+.pg-body{display:flex;flex-direction:column;gap:2rem;padding:2.5rem 1.2rem;background:var(--pale);}
+.pg-content h2{font-family:'Big Shoulders Display',sans-serif;font-size:1.6rem;letter-spacing:.03em;margin:1.5rem 0 .6rem;}
+.pg-content p{font-size:.88rem;line-height:1.8;color:var(--mid);margin-bottom:1rem;}
+.pg-content ul{list-style:none;margin-bottom:1.2rem;}
+.pg-content ul li{display:flex;align-items:flex-start;gap:.65rem;font-size:.85rem;
+  line-height:1.6;padding:.4rem 0;border-bottom:1px solid var(--border);color:var(--mid);}
+.pg-content ul li::before{content:'→';color:var(--rust);font-weight:700;flex-shrink:0;}
+.pg-sidebar{position:static;}
+.sidebar-box{background:var(--ink);color:var(--cream);padding:1.5rem;margin-bottom:1.2rem;}
+.sidebar-box h4{font-family:'Big Shoulders Display',sans-serif;font-size:.95rem;letter-spacing:.08em;margin-bottom:1rem;color:var(--gold);}
+.sidebar-box p{font-size:.8rem;line-height:1.7;color:rgba(255,255,255,.5);margin-bottom:.8rem;}
+.sidebar-contact{display:flex;align-items:center;gap:.65rem;padding:.65rem 0;
+  border-bottom:1px solid rgba(255,255,255,.07);font-size:.8rem;color:rgba(255,255,255,.65);}
+.sidebar-contact span:first-child{font-size:1rem;}
+.schema-box{background:rgba(255,255,255,.04);border-radius:3px;padding:1.2rem;
+  font-family:monospace;font-size:.7rem;color:rgba(255,255,255,.6);overflow:auto;
+  margin-top:1.5rem;line-height:1.6;border:1px solid rgba(255,255,255,.08);}
+.schema-box .key{color:var(--gold);}.schema-box .val{color:rgba(255,255,255,.85);}
+
+/* ── FAQ ── */
+.faq-sec{padding:3rem 1.2rem;background:var(--cream);}
+.faq-item{border-bottom:1px solid var(--border);overflow:hidden;}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;
+  cursor:pointer;font-weight:600;font-size:.88rem;gap:1rem;min-height:48px;}
+.faq-q:hover{color:var(--rust);}
+.faq-icon{font-size:1.1rem;flex-shrink:0;transition:transform .25s;color:var(--rust);}
+.faq-a{font-size:.84rem;line-height:1.75;color:var(--mid);padding-bottom:1rem;display:none;}
+.faq-item.open .faq-a{display:block;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+
+/* ── NEARBY CITIES ── */
+.near-cities{padding:2.5rem 1.2rem;background:var(--pale);border-top:1px solid var(--border);}
+.near-grid{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem;}
+.near-chip{display:inline-flex;align-items:center;gap:.3rem;padding:.5rem .9rem;
+  background:var(--cream);border:1.5px solid var(--border);font-size:.75rem;
+  cursor:pointer;transition:all .2s;border-radius:2px;}
+.near-chip:hover{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+/* ── WHAT WE DO (accordion) ── */
+.wwd-list{border-top:1px solid rgba(255,255,255,.1);}
+.wwd-item{border-bottom:1px solid rgba(255,255,255,.1);cursor:pointer;}
+.wwd-head{display:flex;align-items:center;gap:1rem;padding:1.3rem 0;}
+.wwd-num{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:rgba(255,255,255,.3);flex-shrink:0;width:1.6rem;}
+.wwd-em{font-size:1.3rem;flex-shrink:0;}
+.wwd-name{font-family:'Big Shoulders Display',sans-serif;font-size:1.15rem;letter-spacing:.02em;color:#fff;flex:1;}
+.wwd-plus{font-size:1.2rem;color:rgba(255,255,255,.35);transition:transform .25s;flex-shrink:0;}
+.wwd-item.open .wwd-plus{transform:rotate(45deg);color:var(--gold);}
+.wwd-body{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+.wwd-item.open .wwd-body{max-height:220px;}
+.wwd-body p{font-size:.85rem;line-height:1.75;color:rgba(255,255,255,.5);padding:0 0 1.4rem 2.6rem;max-width:640px;}
+
+/* ── RANKING FACTOR DIALS ── */
+.factor-row{display:grid;grid-template-columns:1fr;gap:1.5px;background:var(--border);
+  border:1.5px solid var(--border);margin-top:2rem;}
+.factor-card{background:var(--pale);padding:1.6rem 1.4rem;}
+.factor-dial{width:52px;height:52px;border-radius:50%;border:3px solid var(--border);
+  position:relative;margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;}
+.factor-dial::before{content:'';position:absolute;inset:-3px;border-radius:50%;
+  border:3px solid var(--rust);clip-path:polygon(0 0,var(--fill,50%) 0,var(--fill,50%) 100%,0 100%);}
+.factor-dial span{font-family:'IBM Plex Mono',monospace;font-size:.65rem;color:var(--ink);}
+.factor-card h4{font-family:'Big Shoulders Display',sans-serif;font-size:1.05rem;letter-spacing:.03em;margin-bottom:.4rem;}
+.factor-card p{font-size:.82rem;color:var(--mid);line-height:1.65;}
+
+/* ── PERSONA GRID (Who This Is For) ── */
+.who-grid{display:grid;grid-template-columns:1fr;gap:1.5px;background:var(--border);border:1.5px solid var(--border);}
+.who-card{background:var(--pale);padding:1.6rem 1.4rem;transition:background .2s;}
+.who-card:hover{background:var(--cream);}
+.who-tag{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--rust);margin-bottom:.6rem;display:block;}
+.who-card p{font-size:.85rem;line-height:1.7;color:var(--mid);}
+
+/* ── TRUST SECTION ── */
+.trust-sec{padding:3.5rem 1.2rem;background:var(--ink);}
+.trust-grid{display:grid;grid-template-columns:1fr;gap:1.5px;background:rgba(255,255,255,.08);margin-top:2rem;}
+.trust-card{background:var(--ink);padding:1.5rem 1.3rem;}
+.trust-card .t-icon{font-family:'IBM Plex Mono',monospace;font-size:.65rem;color:var(--gold);
+  letter-spacing:.06em;text-transform:uppercase;margin-bottom:.6rem;display:block;}
+.trust-card p{font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.55);}
+
+
+.process-sec{padding:3.5rem 1.2rem;border-bottom:1px solid var(--border);}
+.process-hdr{text-align:center;margin-bottom:3rem;}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;position:relative;}
+.steps::before{display:none;}
+.step{text-align:center;padding:0 .5rem;}
+.step-c{width:64px;height:64px;border-radius:50%;background:var(--pale);border:2px solid var(--border);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;position:relative;
+  z-index:1;font-size:1.5rem;transition:background .3s,border-color .3s;}
+.step:hover .step-c{background:var(--rust);border-color:var(--rust);}
+.step-n{position:absolute;top:-5px;right:-5px;width:20px;height:20px;background:var(--ink);
+  color:var(--cream);border-radius:50%;font-size:.6rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;}
+.step h4{font-family:'Big Shoulders Display',sans-serif;font-size:.95rem;letter-spacing:.04em;margin-bottom:.35rem;}
+.step p{font-size:.75rem;color:var(--mid);line-height:1.6;}
+
+/* ── CTA BAND ── */
+.cta-band{background:var(--rust);padding:2rem 1.2rem;display:flex;flex-direction:column;gap:1.2rem;}
+.cta-band-t{font-family:'Big Shoulders Display',sans-serif;font-size:1.6rem;letter-spacing:.03em;color:#fff;line-height:1.1;}
+.cta-band-t span{font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;font-weight:400;letter-spacing:0;display:block;opacity:.75;margin-top:.3rem;}
+.cta-band .btn{align-self:flex-start;}
+
+/* ── TESTIMONIALS ── */
+.testi-track-wrap{overflow:hidden;}
+.testi-track{display:flex;gap:1rem;animation:tscroll 35s linear infinite;width:max-content;}
+.testi-track:hover{animation-play-state:paused;}
+@keyframes tscroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.testi-card{width:280px;flex-shrink:0;background:var(--cream);border:1.5px solid var(--border);padding:1.6rem;border-radius:2px;}
+.testi-stars{color:var(--gold);font-size:.82rem;margin-bottom:.8rem;letter-spacing:.1em;}
+.testi-text{font-family:'Big Shoulders Display',sans-serif;font-size:.92rem;line-height:1.7;color:var(--ink);margin-bottom:1.2rem;font-style:italic;}
+.testi-author{display:flex;align-items:center;gap:.65rem;}
+.tav{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0;}
+.testi-name{font-weight:600;font-size:.82rem;}
+.testi-biz{font-size:.72rem;color:var(--mid);}
+
+/* ── PRICING ── */
+.pricing-wrap{display:flex;flex-direction:column;gap:0;}
+.qw-grid{grid-template-columns:repeat(2,1fr);}
+@media(min-width:640px){.qw-grid{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:1024px){.qw-grid{grid-template-columns:repeat(4,1fr);}}
+.pricing-grid{display:flex;flex-direction:column;gap:2px;background:var(--border);
+  border:2px solid var(--border);max-width:100%;}
+.price-card{background:var(--pale);padding:2rem 1.5rem;position:relative;transition:background .2s;}
+.price-card.feat{background:var(--ink);color:var(--cream);}
+.price-card:not(.feat):hover{background:var(--cream);}
+.price-badge{display:inline-block;background:var(--rust);color:#fff;font-size:.62rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;padding:.22rem .7rem;border-radius:2px;margin-bottom:1.2rem;}
+.price-plan{font-family:'Big Shoulders Display',sans-serif;font-size:1.6rem;letter-spacing:.05em;margin-bottom:.3rem;}
+.price-amt{font-family:'Big Shoulders Display',sans-serif;font-size:2.8rem;line-height:1;letter-spacing:.02em;}
+.price-amt sup{font-size:1.2rem;}
+.price-per{font-size:.72rem;color:var(--mid);margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);}
+.price-card.feat .price-per{color:rgba(255,255,255,.4);border-color:rgba(255,255,255,.1);}
+.price-feats{list-style:none;margin-bottom:2rem;}
+.price-feats li{display:flex;align-items:flex-start;gap:.65rem;font-size:.8rem;
+  padding:.45rem 0;border-bottom:1px solid var(--border);color:var(--mid);line-height:1.5;}
+.price-card.feat .price-feats li{color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.07);}
+.price-feats li::before{content:'✓';flex-shrink:0;width:16px;height:16px;background:var(--sage);
+  color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:.56rem;font-weight:700;margin-top:2px;}
+
+/* ── PHASE ROADMAP ── */
+.phase-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);border:1.5px solid var(--border);}
+.phase-card{background:var(--pale);padding:1.5rem 1.3rem;}
+.phase-card.active-phase{background:var(--cream);}
+.phase-num{font-family:'Big Shoulders Display',sans-serif;font-size:3rem;line-height:1;color:rgba(13,13,13,.07);margin-bottom:.8rem;}
+.phase-card.active-phase .phase-num{color:var(--rust);}
+.phase-title{font-family:'Big Shoulders Display',sans-serif;font-size:1rem;letter-spacing:.04em;margin-bottom:.4rem;}
+.phase-pages{display:inline-block;background:var(--ink);color:var(--cream);font-size:.62rem;
+  font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.18rem .55rem;border-radius:2px;margin-bottom:.7rem;}
+.phase-card.active-phase .phase-pages{background:var(--rust);}
+.phase-desc{font-size:.78rem;line-height:1.65;color:var(--mid);}
+
+/* ── SITEMAP ── */
+.sitemap-grid{display:grid;grid-template-columns:1fr;gap:1.5px;background:var(--border);border:1.5px solid var(--border);}
+.sitemap-city-block{background:var(--pale);padding:1.3rem;}
+.sitemap-city-block h4{font-family:'Big Shoulders Display',sans-serif;font-size:.95rem;letter-spacing:.05em;margin-bottom:.7rem;color:var(--rust);}
+.sitemap-link{display:block;font-size:.7rem;padding:.22rem 0;color:var(--mid);cursor:pointer;transition:color .2s;border-bottom:1px solid var(--border);}
+.sitemap-link:hover{color:var(--rust);}
+
+/* ── CONTACT ── */
+.contact-sec{padding:3rem 1.2rem;display:flex;flex-direction:column;gap:2rem;
+  background:var(--cream);border-top:1px solid var(--border);}
+.contact-l h2{font-family:'Big Shoulders Display',sans-serif;font-size:2.2rem;letter-spacing:.02em;margin:.6rem 0 .8rem;}
+.contact-l p{font-size:.88rem;color:var(--mid);line-height:1.75;margin-bottom:1.5rem;}
+.ci{display:flex;align-items:center;gap:.75rem;padding:.8rem 0;border-bottom:1px solid var(--border);font-size:.85rem;}
+.ci a{color:var(--ink);transition:color .2s;}
+.ci a:hover{color:var(--rust);}
+.contact-form{display:flex;flex-direction:column;gap:.9rem;width:100%;}
+.f-row{display:flex;flex-direction:column;gap:.9rem;}
+.fg{display:flex;flex-direction:column;gap:.35rem;}
+.fg label{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);}
+.fg input,.fg select,.fg textarea{
+  padding:.8rem 1rem;background:var(--pale);border:1.5px solid var(--border);
+  border-radius:2px;font-family:'IBM Plex Sans',sans-serif;font-size:16px;
+  color:var(--ink);outline:none;transition:border-color .2s;min-height:48px;
+  width:100%;box-sizing:border-box;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--rust);}
+.fg textarea{resize:vertical;min-height:100px;font-size:.88rem;}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);color:rgba(255,255,255,.45);padding:2.5rem 1.2rem;
+  display:grid;grid-template-columns:1fr;gap:2rem;}
+.f-brand .logo{display:block;margin-bottom:.8rem;color:var(--cream);}
+.f-brand p{font-size:.78rem;line-height:1.7;}
+footer h5{font-family:'Big Shoulders Display',sans-serif;font-size:.9rem;letter-spacing:.1em;color:var(--cream);margin-bottom:1rem;}
+footer ul{list-style:none;}
+footer ul li{font-size:.78rem;padding:.28rem 0;cursor:pointer;transition:color .2s;}
+footer ul li:hover{color:var(--cream);}
+.f-bottom{background:var(--ink);border-top:1px solid rgba(255,255,255,.05);
+  padding:1.2rem;font-size:.7rem;color:rgba(255,255,255,.25);
+  display:flex;flex-direction:column;gap:.4rem;text-align:center;}
+
+/* ── FADE IN ── */
+.fi{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.fi.vis{opacity:1;transform:translateY(0);}
+
+/* ══════════════════════════════════════════
+   TABLET — 640px+
+══════════════════════════════════════════ */
+@media(min-width:640px){
+  #nav{padding:0 1.5rem;}
+  .logo{font-size:1.55rem;}
+  .hero{flex-direction:row;}
+  .hero-l{flex:1;padding:4rem 2rem 3rem;}
+  .hero-r{flex:0 0 45%;min-height:auto;}
+  .rank-gauge{max-width:300px;}
+  .btns{flex-direction:row;width:auto;}
+  .btns .btn{width:auto;}
+  .stats{grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  .stat-n{font-size:2rem;}
+  .services-sec,.cities-sec,.city-services-sec,.process-sec,
+  .near-cities,.faq-sec,.city-coverage,.svc-hero,.pg-body,
+  .contact-sec{padding:4rem 2rem;}
+  .svc-grid{grid-template-columns:1fr 1fr;}
+  .city-grid{grid-template-columns:repeat(3,1fr);}
+  .city-svc-grid{grid-template-columns:1fr 1fr;}
+  .coverage-grid{grid-template-columns:repeat(4,1fr);}
+  .steps{grid-template-columns:repeat(3,1fr);}
+  .factor-row{grid-template-columns:repeat(3,1fr);}
+  .who-grid{grid-template-columns:repeat(2,1fr);}
+  .trust-grid{grid-template-columns:repeat(3,1fr);}
+  .city-hero{flex-direction:row;padding:3.5rem 2rem;align-items:center;}
+  .city-hero-l{flex:1.2;}
+  .city-hero-r{flex:1;}
+  .pg-body{flex-direction:row;gap:2.5rem;}
+  .pg-sidebar{position:sticky;top:calc(var(--nav-h) + 1.5rem);flex:0 0 280px;align-self:flex-start;}
+  .svc-hero{flex-direction:row;gap:2.5rem;padding:3.5rem 2rem;}
+  .pricing-grid{flex-direction:row;}
+  .price-card.feat{transform:scale(1.02);}
+  .sitemap-grid{grid-template-columns:repeat(2,1fr);}
+  .phase-grid{grid-template-columns:repeat(2,1fr);}
+  .cta-band{flex-direction:row;align-items:center;padding:2.5rem 2rem;}
+  footer{grid-template-columns:1fr 1fr;padding:3rem 2rem;gap:2.5rem;}
+  .f-bottom{flex-direction:row;justify-content:space-between;padding:1.2rem 2rem;}
+  .testi-card{width:320px;}
+  .contact-sec{flex-direction:row;gap:3rem;}
+  .f-row{flex-direction:row;}
+}
+
+/* ══════════════════════════════════════════
+   DESKTOP — 1024px+
+══════════════════════════════════════════ */
+@media(min-width:1024px){
+  :root{--nav-h:68px;}
+  #nav{padding:0 3rem;}
+  .logo{font-size:1.65rem;}
+  .nav-links{display:flex;gap:2rem;list-style:none;}
+  .nav-links a{font-size:.78rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);transition:color .2s;cursor:pointer;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-cta{display:inline-flex!important;background:var(--rust)!important;color:#fff!important;
+    padding:.45rem 1.2rem;border-radius:2px;font-size:.78rem!important;cursor:pointer;}
+  .nav-cta:hover{background:#a83820!important;}
+  .hamburger{display:none!important;}
+  .hero-l{padding:5rem 3rem 4rem;}
+  .hero-r{flex:0 0 50%;}
+  .rank-gauge{max-width:320px;}
+  .stat-n{font-size:2.2rem;}
+  .services-sec,.cities-sec,.city-services-sec,.process-sec,
+  .near-cities,.faq-sec,.city-coverage,.contact-sec{padding:5rem 3rem;}
+  .svc-hero,.pg-body{padding:5rem 3rem;}
+  .svc-grid{grid-template-columns:repeat(4,1fr);}
+  .city-grid{grid-template-columns:repeat(5,1fr);}
+  .city-svc-grid{grid-template-columns:repeat(3,1fr);}
+  .coverage-grid{grid-template-columns:repeat(5,1fr);}
+  .steps{grid-template-columns:repeat(5,1fr);}
+  .steps::before{display:block;content:'';position:absolute;top:32px;left:10%;width:80%;height:1px;background:var(--border);}
+  .sitemap-grid{grid-template-columns:repeat(4,1fr);}
+  .phase-grid{grid-template-columns:repeat(4,1fr);}
+  .pricing-grid{max-width:980px;margin:0 auto;}
+  .services-hdr{flex-direction:row;align-items:flex-end;}
+  .services-sec{padding:7rem 3rem;}
+  .cities-sec{padding:7rem 3rem;}
+  .process-sec{padding:7rem 3rem;}
+  .cta-band{padding:3rem;}
+  footer{grid-template-columns:2fr 1fr 1fr 1fr;padding:4rem 3rem;}
+  .f-bottom{padding:1.4rem 3rem;}
+  .testi-card{width:360px;}
+  .city-hero{gap:5rem;padding:5rem 3rem;}
+  .pg-sidebar{flex:0 0 320px;}
+  .h1{font-size:clamp(4rem,6vw,7rem);}
+  .s-h2{font-size:clamp(2.4rem,4vw,4.5rem);}
+}
+
+/* ══════════════════════════════════════════
+   LARGE DESKTOP — 1280px+
+══════════════════════════════════════════ */
+@media(min-width:1280px){
+  #nav{padding:0 4rem;}
+  .hero-l{padding:6rem 4rem 5rem;}
+  .services-sec,.cities-sec,.process-sec,
+  .faq-sec,.contact-sec,.near-cities,.city-coverage{padding:8rem 4rem;}
+  .svc-hero,.pg-body,.city-services-sec{padding:6rem 4rem;}
+  .city-hero{padding:6rem 4rem;}
+  .cta-band{padding:3.5rem 4rem;}
+  footer{padding:5rem 4rem;}
+  .f-bottom{padding:1.5rem 4rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════ -->
+<nav id="nav">
+  <a class="logo" onclick="showView('home')">Ranking<span> Pro Max</span></a>
+  <ul class="nav-links">
+    <li><a onclick="showView('services')">Services</a></li>
+    <li><a onclick="scrollToContact()">Pricing</a></li>
+    <li><a onclick="scrollToContact()">Contact</a></li>
+    <li><a class="nav-cta btn" onclick="scrollToContact()">Free Audit</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <span class="mob-link" onclick="closeMobile();showView('home')">Home</span>
+  <span class="mob-link" onclick="closeMobile();showView('services')">Services</span>
+  <span class="mob-link" onclick="closeMobile();scrollToContact()">Pricing</span>
+  <span class="mob-link" onclick="closeMobile();scrollToContact()">Contact</span>
+  <span class="mob-link" onclick="closeMobile();scrollToContact()" style="color:var(--rust)">Get Free Audit →</span>
+  <div class="mobile-contact">
+    <a href="tel:+15165492876">📞 (516) 549-2876</a>
+    <a href="https://wa.me/15165492876" target="_blank">💬 WhatsApp Us</a>
+    <a href="mailto:hello@rankingpromax.com">📧 hello@rankingpromax.com</a>
+    <span style="font-size:.8rem;color:var(--mid);">📍 8 Carmans Ct, Farmingdale NY 11735</span>
+  </div>
+</div>
+
+<!-- ══ HOME VIEW ═════════════════════════════════════════════ -->
+<div id="view-home" class="view active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-l">
+      <div class="tag">Local SEO Agency Farmingdale NY</div>
+      <h1 class="h1">You Know You<br>Belong on <em>Main<br>Street</em>. Does<br>Google?</h1>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.05em;color:var(--mid);margin:-.6rem 0 1.4rem;">The Farmingdale NY SEO company businesses call when the map pack doesn't show them — search "SEO agency near Farmingdale NY" and we're built to be the answer.</p>
+      <p class="sub">Ranking Pro Max is a local SEO agency based right here in Farmingdale, NY — a Farmingdale NY local SEO company and Long Island local SEO company that works with one town at a time, starting with this one. Search "local search engine optimization near me 11735" and you'll see the gap: when someone nearby searches for what you do, we make sure your business shows up first, not the shop three towns over with a bigger ad budget. Ask around for the best local SEO agency Farmingdale has, and the answer usually comes down to who actually shows up on the map — that's the standard we hold ourselves to.</p>
+      <div class="btns">
+        <button class="btn btn-r" onclick="scrollToContact()">Get Free Audit →</button>
+        <button class="btn btn-k" onclick="showView('services')">See Our Services</button>
+      </div>
+      <div class="stats">
+        <div><div class="stat-n">2026</div><div class="stat-l">Founded</div></div>
+        <div><div class="stat-n">NY</div><div class="stat-l">Farmingdale-Based</div></div>
+        <div><div class="stat-n">24<span>h</span></div><div class="stat-l">Free Audit Turnaround</div></div>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="hero-r-bg"></div>
+      <div class="hero-r-content">
+        <div class="rank-gauge">
+          <div class="rank-ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="rank-track">
+            <div class="rank-zone">Unranked</div>
+            <div class="rank-zone">Page One</div>
+            <div class="rank-zone target">Local 3-Pack</div>
+            <div class="rank-marker"></div>
+          </div>
+          <div class="rank-caption">Where GBP Optimization Takes You</div>
+        </div>
+        <div class="hero-kpi">Now Serving</div>
+        <div class="hero-kpi-n">Farmingdale, NY</div>
+        <div class="live-badge"><span class="dot"></span> Accepting New Clients</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker-bar"><div class="ticker" id="ticker-home"></div></div>
+
+  <!-- What We Do -->
+  <section class="services-sec">
+    <div class="services-hdr fi">
+      <div>
+        <div class="s-label gold">What We Do</div>
+        <h2 class="s-h2 light">Six Ways We Get You<br>Found in <em>Farmingdale</em></h2>
+        <p style="color:rgba(255,255,255,.5);font-size:.88rem;line-height:1.75;max-width:600px;margin-top:.8rem;">Running a business in Farmingdale means you're busy. You don't have time to become an SEO expert, and honestly, you shouldn't have to. This is small business SEO Farmingdale NY built as one service, not six separate vendors — Google Business Profile management Farmingdale NY, citations, local SEO services Farmingdale NY, chatbots, your website, and social, handled by one digital marketing agency Farmingdale NY team. Tap any service below for what we actually do, in plain terms.</p>
+      </div>
+    </div>
+    <div class="wwd-list fi" id="home-services"></div>
+  </section>
+
+  <!-- Why Farmingdale -->
+  <section style="padding:3.5rem 1.2rem;max-width:820px;margin:0 auto;">
+    <div class="fi">
+      <div class="s-label">Why This Matters Here</div>
+      <h2 class="s-h2" style="font-size:clamp(1.8rem,5vw,3rem);">Why Farmingdale Businesses<br>Need This</h2>
+      <p style="color:var(--mid);font-size:.92rem;line-height:1.85;margin-top:1.2rem;">Farmingdale isn't a huge market, and that's exactly why local search ranking matters so much here. Most digital marketing agencies in Farmingdale NY treat this village like a rounding error on a bigger regional account — we don't. With roughly 47 businesses listed in Farmingdale Village's local directory across various categories, the businesses that show up in Google's local map results are usually the ones that have actually optimized their listings — not necessarily the ones that have been open longest.</p>
+      <p style="color:var(--mid);font-size:.92rem;line-height:1.85;margin-top:1rem;">Google's local pack ranking factors weigh three things. You can't change where your building sits on Route 109, Route 110, or Conklin Street — but two of the three are fully within your control, and most Farmingdale businesses leave both on the table:</p>
+    </div>
+    <div class="factor-row fi" id="home-factors"></div>
+    <div class="fi" style="margin-top:2rem;">
+      <p style="color:var(--mid);font-size:.92rem;line-height:1.85;">That gap is where the Google Maps 3-pack gets decided. When someone searches "auto repair near me" or "hair salon Farmingdale" from their phone — and most near me searches now happen on mobile, which is why mobile local search performance matters as much as desktop — Google shows three businesses at the top of the map before anything else. If your profile is thin, your categories are wrong, or your citations don't match, you're handing that spot to whichever nearby competitor did the work.</p>
+      <p style="color:var(--mid);font-size:.92rem;line-height:1.85;margin-top:1rem;">In a village built around a tight commercial corridor near Main Street, Route 109, Route 110, and the LIRR Farmingdale train station, the businesses within a few blocks of each other are often competing for the exact same three spots. This is hyperlocal SEO in its purest form: an unoptimized profile doesn't just underperform — it actively loses ground to a fully-optimized one nearby, even if your business is better. Google can't rank what it can't clearly understand.</p>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-sec">
+    <div class="process-hdr fi">
+      <div class="s-label" style="justify-content:center;">How It Works</div>
+      <h2 class="s-h2">From <em>Zero</em> to the 3-Pack in 4 Steps</h2>
+    </div>
+    <div class="steps fi">
+      <div class="step"><div class="step-c">🔍<div class="step-n">1</div></div><h4>Audit</h4><p>We pull up your current profile, website, and citations and show you exactly where you stand — in plain language, not a jargon-filled report.</p></div>
+      <div class="step"><div class="step-c">📋<div class="step-n">2</div></div><h4>Strategy</h4><p>A clear plan built for your business and your ZIP code — 11735 — not a generic template. We prioritize what moves the needle fastest.</p></div>
+      <div class="step"><div class="step-c">⚙️<div class="step-n">3</div></div><h4>Implementation</h4><p>We do the actual work — profile, citations, website, chatbots, or social. You approve the plan, we execute it, you keep running your business.</p></div>
+      <div class="step"><div class="step-c">📈<div class="step-n">4</div></div><h4>Ongoing Monitoring</h4><p>We track your rankings, watch for new competitors, and adjust as Google's algorithm shifts — so your position doesn't quietly slip.</p></div>
+    </div>
+  </section>
+
+  <!-- Who This Is For -->
+  <section style="padding:3.5rem 1.2rem;max-width:1080px;margin:0 auto;">
+    <div class="fi" style="margin-bottom:2rem;">
+      <div class="s-label">Who This Is For</div>
+      <h2 class="s-h2" style="font-size:clamp(1.8rem,5vw,3rem);">Built for Real<br>Farmingdale Businesses</h2>
+    </div>
+    <div class="who-grid fi" id="home-who"></div>
+  </section>
+
+  <!-- CTA Band -->
+  <div class="cta-band fi">
+    <div class="cta-band-t">Ready to See Where You Stand?<span>Get your free local SEO audit — no strings attached.</span></div>
+    <button class="btn btn-w" onclick="scrollToContact()">Get My Free Audit →</button>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-sec">
+    <div class="fi" style="margin-bottom:2.5rem;">
+      <div class="s-label">FAQ</div>
+      <h2 class="s-h2">Common Questions From<br><em>Farmingdale</em> Business Owners</h2>
+    </div>
+    <div id="home-faq"></div>
+  </section>
+
+  <!-- Trust / Why Work With Us -->
+  <section class="trust-sec">
+    <div class="fi" style="margin-bottom:1rem;max-width:700px;">
+      <div class="s-label gold">Why Work With Us</div>
+      <h2 class="s-h2 light">Local, Direct, and<br><em>Upfront</em> About It</h2>
+      <p style="color:rgba(255,255,255,.5);font-size:.88rem;line-height:1.8;margin-top:1rem;">You won't get bounced between account managers or wait days for a reply. You'll deal with one SEO consultant Farmingdale NY business owners can actually reach — someone who knows your business, your ZIP code 11735, and your competitors on Main Street and Route 110 — because we're working out of the same town you are. We're a Farmingdale-based digital marketing agency Farmingdale NY first, doing small business marketing Farmingdale owners can afford — but as one of the Long Island SEO experts covering Nassau County, we're also equipped as a Nassau County SEO agency and Suffolk County SEO / Suffolk County local SEO resource for Farmingdale-adjacent businesses that need small business digital marketing Long Island can rely on.</p>
+    </div>
+    <div class="trust-grid fi" id="home-trust"></div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing-section" style="padding:7rem 3rem;background:var(--cream);">
+    <div class="fi" style="text-align:center;margin-bottom:4rem;">
+      <div class="s-label" style="justify-content:center;">Transparent Pricing</div>
+      <h2 class="s-h2">Simple Plans, <em>Real Results</em></h2>
+      <p style="color:var(--mid);font-size:.92rem;margin-top:.8rem;">Published rates, not a "call for a quote" — this is what an affordable SEO agency Farmingdale NY pricing page should actually look like. No hidden fees. No long-term contracts. Cancel anytime.</p>
+    </div>
+    <div class="pricing-wrap fi" id="home-pricing"></div>
+  </section>
+
+  <!-- Contact -->
+  <div id="home-contact"></div>
+  <!-- Footer -->
+  <div id="home-footer"></div>
+</div>
+
+<!-- ══ SERVICES VIEW ══════════════════════════════════════════ -->
+<div id="view-services" class="view">
+  <section style="padding:5rem 3rem 4rem;background:var(--pale);border-bottom:1px solid var(--border);">
+    <div class="fi">
+      <div class="pg-breadcrumb"><span onclick="showView('home')">Home</span> / Services</div>
+      <div class="s-label">What We Do</div>
+      <h1 class="s-h2" style="font-size:clamp(2.8rem,5vw,5rem);">11 Local SEO Services for<br><em>Farmingdale</em> Businesses</h1>
+      <p style="color:var(--mid);font-size:.95rem;line-height:1.75;max-width:560px;margin-top:1rem;">Every service is purpose-built for Farmingdale's local market — Main Street, Route 109, Route 110, and every business in between.</p>
+    </div>
+  </section>
+  <div id="services-list"></div>
+  <div id="services-footer"></div>
+</div>
+
+<!-- ══ SERVICE VIEW ═══════════════════════════════════════════ -->
+<div id="view-service" class="view">
+  <div id="service-page-content"></div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════
+const AGENCY = {
+  name: "Ranking Pro Max",
+  phone: "(516) 549-2876",
+  phoneRaw: "+15165492876",
+  whatsapp: "15165492876",
+  email: "hello@rankingpromax.com",
+  address: "8 Carmans Ct, Farmingdale NY 11735",
+};
+
+
+const WHAT_WE_DO = [
+  {slug:"google-business-profile-optimization",emoji:"⭐",name:"Google Business Profile Optimization",desc:"Your Google Business Profile is the listing people see when they search your business name or your service on Google or Google Maps. Most owners claim it once and forget it. We optimize it — categories, service areas, photos, posts, hours, attributes — so it works as hard as your storefront does. Think of it as full Google Business Profile management Farmingdale NY businesses can hand off completely to a Google Business Profile agency Farmingdale NY trusts, whether you call it GBP management Farmingdale or a GMB management company near me — we're the SEO company that ranks businesses on Google Maps for a living."},
+  {slug:"citation-building",emoji:"📍",name:"Local Citations",desc:"A citation is any place online that lists your business name, address, and phone number — think Yelp, Apple Maps, industry directories. When these listings are inconsistent or missing, Google trusts your business less. We build and clean up these listings so your information matches everywhere — citation consistency (NAP) is one of the clearest trust signals Google uses."},
+  {slug:"local-seo-optimization",emoji:"🎯",name:"Local SEO",desc:"This is the broader work of making your website and online presence relevant to Farmingdale searches specifically — not generic searches that could apply to any city. It includes local keyword research, geo-targeted SEO, structured data, and how clearly your pages answer what a nearby customer is actually asking. It's local SEO services Farmingdale NY built for small business owners, not enterprise budgets — SEO for small business owners Farmingdale who want local business SEO Long Island quality without a Long Island small business marketing agency's overhead."},
+  {slug:"ai-chatbot-local-business",emoji:"💬",name:"AI Chatbots",desc:"More customers are asking questions through AI assistants before they ever visit your website. We set up simple chatbot tools that answer common customer questions instantly — hours, pricing ranges, services offered — so you're not losing leads while you're busy working."},
+  {slug:"local-business-website-development",emoji:"🌐",name:"Websites",desc:"If your website is slow, outdated, or hard to use on a phone, it's costing you customers even when your SEO is working. We build clean, mobile-first websites designed to convert visitors into calls and messages, not just look nice — small business website SEO and a website and SEO bundle Farmingdale owners can get from one team, so nothing falls through the cracks between two separate vendors."},
+  {slug:"social-media-management",emoji:"📱",name:"Social Media Management",desc:"Consistent posting on the platforms your customers actually use helps reinforce local trust and keeps your business visible between searches. We keep this simple and steady rather than chasing trends that don't fit a local business."}
+];
+
+const RANK_FACTORS = [
+  {fill:"35%",label:"Proximity",body:"How close you are to the person searching. You can't change where your building sits on Route 109 or 110 — but the other two factors are fully in your control, which is where local SEO experts near Route 109 actually earn their fee."},
+  {fill:"70%",label:"Relevance",body:"How well your listing matches what they typed. Most Farmingdale businesses leave this on the table with thin categories and vague descriptions."},
+  {fill:"55%",label:"Prominence",body:"How well-known and well-documented your business is online — reviews, citations, photos, posts. This is where optimization moves the needle fastest."}
+];
+
+const WHO_FOR = [
+  {tag:"Route 110 Corridor",body:"The Route 110 auto shop competing against three other repair shops within a mile, where the business with the clearest profile and the most consistent listings wins the call, not necessarily the one with the best mechanics. This is local SEO for contractors Long Island in practice — the trade doesn't decide who wins the click, the profile does."},
+  {tag:"Main Street Farmingdale",body:"The Main Street retail store relying on foot traffic and local search from people already walking or driving through downtown Farmingdale, where showing up in \"near me\" searches directly affects whether someone walks in."},
+  {tag:"Near SUNY Farmingdale",body:"The service business near SUNY Farmingdale — tutoring, printing, food, moving, cleaning — trying to reach a rotating population of students, staff, and families who don't yet know the area and are searching cold. It's why a local marketing agency near Farmingdale State College needs to think about turnover, not just traffic."},
+  {tag:"Near Republic Airport",body:"The new business near Republic Airport — logistics, aviation services, contractors — needing to establish local credibility fast in a niche where trust and visibility matter more than volume."},
+  {tag:"Service-Area Business",body:"The home services provider working out of Farmingdale but serving customers by appointment, who needs their service area and categories set up correctly so Google doesn't send the wrong customers or hide them from the right ones. This is service area business SEO done right — local SEO for home services like plumbing, HVAC, and cleaning crews that never see foot traffic but live or die by the map pack."}
+];
+
+const TRUST_POINTS = [
+  {tag:"Local, Not National",body:"Based right here in Farmingdale — not a call center in another state, not an agency managing hundreds of accounts across the country."},
+  {tag:"New & Upfront About It",body:"We're a new business. What we offer instead of a long track record is direct access to the person actually doing the work on your account."},
+  {tag:"Transparent Pricing",body:"Published rates you can see before you commit to anything — no mystery number after a \"consultation.\""},
+  {tag:"Fast Response",body:"You won't get bounced between account managers or wait days for a reply — we're not juggling an overloaded client list yet."}
+];
+
+const HOME_FAQS = [
+  {q:"How long does Google Business Profile optimization take?",a:"Most core optimization work is completed within 1-2 weeks of getting access to your profile. You won't see ranking movement immediately — Google typically takes 4-8 weeks to fully reflect the changes, especially in a competitive corridor like Route 110."},
+  {q:"How much does local SEO cost in Farmingdale NY?",a:"Pricing depends on your starting point and what services you need, but we publish transparent rates rather than quoting a mystery number after a \"consultation.\" Reach out with your business details and you'll get real pricing, not a sales pitch, before you commit to anything."},
+  {q:"What's the difference between claiming and optimizing a Google Business Profile?",a:"Claiming just proves you own the listing — it takes five minutes and does almost nothing for ranking. Optimizing means filling out every category, service, photo, and detail Google uses to decide relevance. Most Farmingdale businesses have claimed their profile but never actually optimized it."},
+  {q:"Do I need a physical storefront in Farmingdale to rank locally?",a:"No — service-area businesses without a public storefront can still rank in local search, including in the local 3-pack. What matters is having your service area, categories, and address details set up correctly in your Google Business Profile, not whether customers walk through a front door."},
+  {q:"How do citations actually help my ranking?",a:"Citations confirm to Google that your business name, address, and phone number are legitimate and consistent everywhere they appear online. When those details match across Yelp, Apple Maps, and industry directories, Google trusts your listing more and ranks it higher than one with conflicting or missing information."},
+  {q:"What makes Farmingdale specifically competitive for local search?",a:"Farmingdale packs around 47 directory-listed businesses into a compact commercial area centered on Main Street and Route 109/110, meaning several competitors often sit within a few blocks of each other. That tight geography means small differences in profile completeness can decide who wins the local 3-pack."},
+  {q:"How do AI chatbots actually work for a small business like mine?",a:"A chatbot sits on your website or Google profile and answers common customer questions instantly — hours, pricing ranges, services, appointment availability — even when you're not available to respond. It captures leads that would otherwise leave and go to a competitor who answers faster."},
+  {q:"Should I run Google Ads or do SEO first?",a:"If you need customers immediately, ads can work, but they stop the moment you stop paying. SEO takes longer to build but keeps working in the background afterward. Most Farmingdale businesses on a tight budget see the strongest long-term return by fixing their local SEO foundation first."},
+  {q:"How much do reviews actually affect my Google ranking?",a:"Reviews affect both ranking and conversion — more recent, detailed reviews signal activity and trust to Google's algorithm, and they directly influence whether a searcher picks up the phone. Review count matters less than consistency: steady, genuine reviews over time outperform a sudden burst followed by silence."},
+  {q:"What does \"local 3-pack\" actually mean?",a:"It's the group of three businesses Google shows at the top of local search results, above the regular list, complete with a map and contact info. For mobile searches — which is most searches now — the local 3-pack is often the only thing a customer sees before deciding who to call."},
+  {q:"How do I check where my business currently ranks in Farmingdale?",a:"Search your main service plus \"Farmingdale\" or \"near me\" from a phone that isn't logged into your own business accounts, ideally from a location near Route 109 or 110. If you're not appearing in the top three map results or the first page, that's a clear signal your profile needs work."},
+  {q:"What's included in a free audit?",a:"You'll get a review of your current Google Business Profile, your website's local search readiness, and your citation consistency across major directories, with specific issues flagged in plain language. There's no obligation attached — you'll see exactly what's wrong and what fixing it would involve before deciding anything."},
+  {q:"How long does it take to rank on Google in Farmingdale NY?",a:"Most Farmingdale businesses see initial movement within 4-8 weeks of a full Google Business Profile and citation cleanup, with stronger 3-pack positioning building over 60-90 days for more competitive categories on Route 109 or Route 110. It depends on how much work your current listing needs and how many competitors are already optimized near you."},
+  {q:"Why isn't my business showing up on Google Maps near Route 109?",a:"Almost always it comes down to one of three things: an unclaimed or unverified profile, categories that are too vague for Google to match you to the search, or citation details that don't match across directories. We check all three in the free audit before recommending anything."},
+  {q:"What's the difference between SEO and local SEO?",a:"SEO covers ranking a website for any search, anywhere. Local SEO focuses specifically on ranking your business in Google Maps results and \"near me\" searches for a defined service area — for us, that's Farmingdale and the towns around it, not a national audience."},
+  {q:"Do I need a website if I already have a Google Business Profile?",a:"A Google Business Profile gets you into the map pack, but it doesn't give you a page you fully control, one built to convert a visitor into a call. Businesses that pair a well-optimized profile with a fast, mobile-first website consistently out-convert those relying on the profile alone."},
+  {q:"Can a small business in Farmingdale really compete with bigger companies on Google?",a:"Yes — local search results weigh proximity and local relevance heavily, which is exactly the ground a big regional or national competitor can't out-budget. A well-optimized Farmingdale business regularly outranks a bigger company with a thinner local presence."},
+  {q:"Does local SEO in Farmingdale include AI Overview optimization?",a:"Yes — the same clear, well-structured business information that helps you rank in Google's map pack is also what AI tools like Google's AI Overviews, ChatGPT, and Perplexity pull from when someone asks for an AI Overviews local business recommendation nearby. We don't treat it as a separate add-on."},
+  {q:"Should I hire a local SEO agency or try to do it myself?",a:"It depends on your time and how competitive your category already is near Main Street or Route 110. DIY can work if you're willing to learn the platforms and stay consistent; most owners find the hours add up faster than expected, which is usually when they call us."},
+  {q:"What areas near Farmingdale do local SEO agencies typically serve?",a:"Most Farmingdale-based local SEO agencies, including Ranking Pro Max, serve Bethpage, Massapequa, Melville, South Farmingdale, commuters around the Farmingdale station, and the broader Nassau/Suffolk County area alongside Farmingdale itself."},
+  {q:"What does local SEO pricing actually look like for a service area business?",a:"Local SEO pricing for a Farmingdale service area business — no storefront, appointment-based — usually runs lower than a retail location because there's no walk-in foot traffic to layer on top. We publish flat rates by service so you know local SEO pricing upfront instead of guessing after a sales call."},
+  {q:"Can I bundle a new website with local SEO instead of hiring two vendors?",a:"Yes — our website and SEO bundle Farmingdale combines small business website SEO architecture (fast load times, schema markup, mobile-first design) with the same local SEO work we'd do on its own, so your site is built to rank from day one instead of getting retrofitted later."},
+  {q:"Does my Farmingdale business need voice search optimization?",a:"Increasingly, yes — voice assistants like Google Assistant and Siri pull answers from the same structured, well-organized business information that ranks you in mobile local search. Voice search optimization isn't a separate service for us; it's a natural result of clear categories, FAQs, and consistent citations."},
+  {q:"Do you handle online reviews management for Farmingdale businesses?",a:"Yes — online reviews management is part of ongoing GBP care: we monitor new reviews across Google and Yelp, draft prompt responses, and help you request reviews from recent happy customers. Consistent review activity is one of the clearest prominence signals in Google's local pack ranking factors."},
+  {q:"What is geo-targeted SEO and does a small Farmingdale business need it?",a:"Geo-targeted SEO means writing content and structuring data around a specific area — Farmingdale, ZIP code 11735, Route 109/110 — instead of generic terms that could apply anywhere. For a hyperlocal SEO market like Farmingdale, this is what separates a business that ranks nearby from one Google can't place at all."},
+  {q:"How do I rank higher on Google Maps in Farmingdale — near Conklin Street or the LIRR station?",a:"How to rank higher on Google Maps Farmingdale comes down to the same fundamentals everywhere in the village, including near Conklin Street or the LIRR Farmingdale train station: an accurately categorized, fully-optimized Google Business Profile with consistent citations. We factor in foot and commuter traffic patterns around specific corridors when writing your service descriptions and Q&A."}
+];
+
+const SERVICES = [
+  {slug:"google-business-profile-claiming-verification",name:"Google Business Profile Claiming & Verification",shortName:"GBP Claiming",emoji:"📍",price:"from $297",headline:"Get Your Business On Google Maps — Fast",description:"We handle the complete Google Business Profile claiming and verification process end-to-end.",longDesc:"Without a verified Google Business Profile, your business is practically invisible to local customers. We navigate the entire claiming and verification process — including postcard verification, video verification, and phone verification — so your business appears on Google Maps and Search within days, not weeks.",benefits:["Complete GBP claiming in 24–48 hours","All verification methods handled for you","Proper category selection from day one","Initial profile setup included","Google Maps pin placement verified","Ownership transfer from previous agencies"],faqs:[{q:"How long does GBP verification take in {city}?",a:"In {city}, most verifications complete within 3–7 days via postcard. We also use faster video verification when available, often completing in 24–48 hours."},{q:"What if someone else claimed my {city} business listing?",a:"We handle ownership disputes for {city} businesses regularly. We submit the official ownership request to Google and guide you through the identity verification process."},{q:"Do I need a physical address in {city} to get verified?",a:"Yes, Google requires a physical service address in {city} or your service area. Service-area businesses without a storefront can hide their address after verification."},{q:"Can you verify my business if I serve multiple {city}-area locations?",a:"Absolutely. We can create and verify multiple GBP listings for each location you serve in the {city} area, each properly optimized for that specific neighborhood."}]},
+  {slug:"google-business-profile-optimization",name:"Google Business Profile Optimization",shortName:"GBP Optimization",emoji:"⭐",price:"from $497",headline:"Rank in the Local 3-Pack for Farmingdale Searches",description:"Complete optimization of your Google Business Profile to maximize visibility in local search.",longDesc:"A claimed profile is just the starting point. Our GBP optimization process covers every ranking factor — from category selection and attribute setup to photo optimization and keyword-rich descriptions — engineered specifically to rank your business in the coveted Google local 3-pack for Farmingdale searches.",intro:"Google Business Profile (GBP) optimization is the process of rebuilding every field on your Google listing — categories, description, attributes, photos, services, and Q&A — so it directly matches what Farmingdale customers search for. A bare, unoptimized profile might get you found; an optimized one gets you found first, above the businesses lining Route 109, Route 110, and Main Street Farmingdale that are competing for the exact same searches. This isn't a one-time checkbox — it's a structured rebuild based on what's actually working for the top three ranking businesses in Farmingdale right now.",introSecondary:"Farmingdale sits at a crossroads: it's a Nassau County village of roughly 9,990 residents built around Route 109 and Route 110, with Republic Airport, SUNY Farmingdale, and a historic aerospace-manufacturing base all drawing steady daily traffic through Downtown Farmingdale. That mix means local searches here range from students near SUNY Farmingdale looking for a quick bite, to commuters near Republic Airport searching for an auto shop, to homeowners in the surrounding residential streets searching for a plumber at 9pm. A generic GBP can't speak to all of those searches — an optimized one is built to catch each of them.",whyNow:"With roughly 47 active competitors in Farmingdale's local business directory alone, the gap between the businesses in the local 3-pack and everyone else isn't talent or price — it's almost always profile completeness. Every month a GBP sits unoptimized, Google has less reason to trust it over a competitor's, and rankings that took months to build become harder to reclaim. Farmingdale's local market is still winnable right now precisely because most competing profiles are only partially filled out.",whoFor:["Farmingdale businesses with a claimed but under-optimized GBP that isn't showing up in the local 3-pack","Service businesses near Route 110, Route 109, or Downtown Farmingdale losing calls to lower-quality competitors who simply rank higher","New businesses near Republic Airport or SUNY Farmingdale that need to establish local relevance fast","Farmingdale business owners who inherited a GBP from a previous agency and don't know what's actually configured on it"],process:[{title:"Farmingdale Competitor Audit",desc:"We pull the current top 3 ranking profiles for your category in Farmingdale and reverse-engineer what's working — categories used, photo count, review velocity, and posting frequency."},{title:"Full Profile Rebuild",desc:"Primary and secondary categories, business description, attributes, service menu, and Q&A are rewritten using the exact terms Farmingdale searchers use, not generic industry language."},{title:"Photo & Media Optimization",desc:"50+ geotagged photos are uploaded covering your storefront, team, and work — Farmingdale profiles with 100+ photos see significantly higher call volume than bare listings."},{title:"Local 3-Pack Monitoring",desc:"We track your ranking position for target Farmingdale searches weekly for the first 60 days and adjust categories or content if a competitor outranks you."}],benefits:["Primary & secondary category optimization","Keyword-optimized business description","50+ photos uploaded and geotagged","All attributes and features enabled","Products/services menu setup","Q&A section seeded with key questions","Booking/appointment links configured"],faqs:[
+    {q:"How much can GBP optimization improve my Farmingdale business's rankings?",a:"Most Farmingdale businesses we optimize see a 40–200% increase in Google Business Profile views within 60 days. The local 3-pack captures 44% of all local search clicks, so a fully optimized profile directly translates into more calls, direction requests, and website visits from customers searching near the 11735 ZIP code."},
+    {q:"What makes Farmingdale GBP optimization different from a generic approach?",a:"Farmingdale competes directly with nearby Bethpage, Melville, and East Farmingdale businesses for the same searches, so we optimize using the exact terms Farmingdale residents type — not generic keywords. We also study which businesses currently rank near Route 109 and Route 110 to find the gaps your profile can fill."},
+    {q:"How many photos should my Farmingdale Google Business Profile have?",a:"Businesses with 100+ photos receive significantly more calls than those with none. For a Farmingdale profile, we start with 50 geotagged photos of your storefront, team, and completed work, then add more monthly to keep signaling activity to Google's ranking algorithm."},
+    {q:"Should I respond to every review on my Farmingdale GBP?",a:"Yes. Google rewards Farmingdale businesses that respond to reviews within 48 hours, positive or negative. We set up response templates specific to your industry so replies sound personal, not automated, while still hitting the engagement signals Google tracks."},
+    {q:"How long does it take to see results from GBP optimization in Farmingdale?",a:"Most Farmingdale clients see measurable ranking movement within 30 to 60 days of a full optimization. Less competitive categories move faster, while businesses competing directly with Route 110 corridor listings may take closer to 90 days to reach the top three positions."},
+    {q:"What's the difference between GBP optimization and just claiming my listing?",a:"Claiming only proves ownership of your listing; optimization is what actually makes Google rank it. We rebuild your categories, description, attributes, photos, and Q&A section from scratch, engineered specifically to compete for Farmingdale's local 3-pack instead of sitting dormant with a bare-bones profile."},
+    {q:"Can GBP optimization help me outrank businesses near Route 110 and Route 109?",a:"Yes, that's exactly the goal. We identify which Farmingdale businesses currently dominate the map pack near Route 110 and Route 109, then optimize your profile's categories, service areas, and keywords to directly challenge those listings for the same searches."},
+    {q:"Do I need a physical Farmingdale address to rank in the local 3-pack?",a:"Yes, Google requires a physical or service-area address in Farmingdale to be eligible for local 3-pack rankings there. Service-area businesses without a public storefront can still qualify — we set your address to hidden after verification while keeping you eligible to rank."},
+    {q:"How does Google decide which Farmingdale business shows up first in the map pack?",a:"Google weighs three factors: relevance, distance, and prominence. For Farmingdale searches, distance from Route 110 or Downtown Farmingdale often decides close races, so we optimize prominence signals — reviews, photos, posts — to help you outrank closer competitors with weaker profiles."},
+    {q:"What Google Business Profile categories work best for Farmingdale service businesses?",a:"The best category depends on your exact service, but precision matters more than popularity. We avoid generic categories and instead select the most specific match Google offers, since Farmingdale businesses with precise categories consistently rank better in local search than those using broad ones."},
+    {q:"Will GBP optimization help me show up for 'near Republic Airport' or 'near SUNY Farmingdale' searches?",a:"Yes. We build location-aware content and Q&A entries referencing Republic Airport, SUNY Farmingdale, and Main Street Farmingdale, since Google increasingly surfaces businesses near recognized local landmarks for 'near me' and voice searches originating from those areas."},
+    {q:"How often do I need to update my Farmingdale GBP after it's optimized?",a:"We recommend weekly updates — new photos, Google Posts, or Q&A responses — since Google actively demotes stale Farmingdale profiles. Our monthly retainer service, separate from one-time optimization, handles this ongoing maintenance if you don't have time to do it yourself."},
+    {q:"Can you optimize a GBP for a business that serves Farmingdale but is based nearby?",a:"Yes. Farmingdale-adjacent businesses in Bethpage, Melville, or East Farmingdale that serve Farmingdale customers can list Farmingdale as a service area on their GBP without a storefront there, and we optimize accordingly so you appear for Farmingdale searches even from a nearby base."},
+    {q:"What happens to my Farmingdale rankings if I get a bad review?",a:"One bad review rarely tanks rankings on its own, but ignoring it can. We draft a professional response within 48 hours and help you request additional reviews from recent happy customers to keep your Farmingdale rating average above the 4.0 threshold most searchers filter by."},
+    {q:"Is GBP optimization a one-time service or ongoing?",a:"Optimization itself is a one-time project — we rebuild your profile from the ground up. But because Google rewards active profiles, we recommend pairing it with our monthly GBP retainer to keep your Farmingdale rankings from slipping back down after the initial boost."}
+  ]},
+  {slug:"monthly-gbp-retainer",name:"Monthly Google Business Profile Retainer",shortName:"GBP Retainer",emoji:"🔄",price:"from $197/mo",headline:"Maintain & Grow Your {city} Google Rankings",description:"Ongoing monthly management to keep your GBP performing at peak levels.",longDesc:"Google's algorithm rewards active, regularly updated profiles. Our monthly retainer keeps your {city} GBP fresh with weekly posts, prompt review responses, updated photos, seasonal offers, and continuous optimization — so you maintain and grow your rankings month after month.",benefits:["4–8 weekly Google Posts per month","All review responses within 24 hours","Monthly performance report","Photo additions each month","Offer/event posts for promotions","Q&A monitoring and responses","Profile health monitoring"],faqs:[{q:"Why do {city} businesses need ongoing GBP management?",a:"Google actively demotes stale profiles. {city} businesses that post weekly get 5x more views than inactive ones. Our retainer ensures constant activity signals."},{q:"How often will you post on my {city} GBP?",a:"We post 1–2 times per week on your {city} GBP — mixing offers, updates, photos, and news relevant to {city} customers."},{q:"What happens if a competitor spam-reports my {city} listing?",a:"We monitor your {city} listing 24/7 for suspicious activity and respond immediately to protect your ranking."},{q:"Will I see monthly reports for my {city} GBP performance?",a:"Yes — monthly reports showing views, searches, direction requests, calls, and website clicks from your {city} GBP."}]},
+  {slug:"citation-building",name:"Citation Building",shortName:"Citations",emoji:"📋",price:"from $297",headline:"Build the Local Authority That Ranks {city} Businesses",description:"100+ consistent NAP citations across top directories to boost your local SEO authority.",longDesc:"Citations — your business Name, Address, and Phone number listed consistently across the web — are one of Google's strongest local ranking signals. We build 100+ citations across Yelp, Yellow Pages, Bing Places, Apple Maps, and niche directories specifically relevant to {city} businesses.",benefits:["100+ citation submissions","Yelp, Yellow Pages, Bing, Apple Maps","Industry-specific directories","Farmingdale chamber of commerce & local directories","NAP consistency audit & cleanup","Duplicate listing removal","Monthly citation monitoring"],faqs:[{q:"How do citations help my {city} business rank higher?",a:"Consistent citations across 100+ sites signal to Google that your {city} business is legitimate, directly improving local rankings."},{q:"Are there specific directories important for {city} businesses?",a:"Yes — beyond national directories, we submit to {city} chamber of commerce listings and local Farmingdale business databases."},{q:"What if my {city} business has inconsistent information online?",a:"We first audit all existing citations, correct inconsistencies, then build new ones on a clean foundation."},{q:"How long before citation building improves my {city} rankings?",a:"Most {city} clients see ranking improvements within 30–60 days of completing citation building."}]},
+  {slug:"local-business-website-development",name:"Local Business Website Development",shortName:"Website Dev",emoji:"🌐",price:"from $1,497",headline:"A Website Built to Rank in {city} — Not Just Look Good",description:"Custom SEO-optimized websites designed to convert {city} visitors into paying customers.",longDesc:"Most website designers build pretty sites that don't rank. We build {city}-optimized websites engineered from the ground up to rank in local search — with proper schema markup, local landing pages, speed optimization, and conversion-focused design that turns {city} visitors into customers.",benefits:["Custom design, mobile-first","Local SEO architecture built-in","Local Business schema markup","{city}-specific landing pages","Google PageSpeed 90+ score","SSL, hosting, domain setup","Contact forms & click-to-call","Google Analytics & Search Console"],faqs:[{q:"Why does my {city} business need a new website for local SEO?",a:"Many {city} businesses are held back by outdated sites with poor mobile performance and missing schema markup. A properly built site is the foundation of every SEO effort."},{q:"Will my website have specific pages for {city} and nearby areas?",a:"Yes — we build dedicated location pages for {city} and surrounding service areas, each with unique content and targeted keywords."},{q:"How fast will my new {city} business website load?",a:"We target Google PageSpeed scores above 90. Fast load times are a direct ranking factor, especially for {city} mobile users."},{q:"Do you handle hosting for {city} business websites?",a:"Yes — we set up fast, secure hosting, configure your domain, install SSL, and handle all technical setup."}]},
+  {slug:"ai-chatbot-local-business",name:"AI Chatbot for Local Business",shortName:"AI Chatbot",emoji:"💬",price:"from $397/mo",headline:"Never Miss a {city} Lead — Even at 3AM",description:"AI-powered chatbots that book appointments and capture leads 24/7 for {city} businesses.",longDesc:"67% of customers prefer messaging over calling. Our AI chatbots for {city} businesses handle inquiries, qualify leads, book appointments, and answer common questions around the clock — giving your {city} business a 24/7 sales team that costs less than a part-time employee.",benefits:["24/7 automated lead capture","Appointment booking integration","Trained on your {city} business info","Handles FAQs automatically","SMS & WhatsApp integration","Lead notification to your phone","Monthly conversation analytics","Escalation to human when needed"],faqs:[{q:"What kinds of {city} businesses benefit most from AI chatbots?",a:"Service businesses in {city} see the biggest ROI — HVAC, plumbing, dental, legal, medical, auto repair, salons, and restaurants."},{q:"Will the chatbot understand {city}-specific questions?",a:"Yes — we train your chatbot on your specific {city} services, hours, location, pricing, and FAQs."},{q:"Can the chatbot book appointments for my {city} business?",a:"Absolutely. We integrate with your existing calendar so {city} customers can book 24/7 without calling."},{q:"How quickly can a chatbot be deployed for my {city} business?",a:"Most {city} business chatbots go live within 5–7 business days."}]},
+  {slug:"ai-agents-local-business",name:"AI Agents for Local Business",shortName:"AI Agents",emoji:"🤖",price:"from $597/mo",headline:"Automate Your {city} Business with Intelligent AI",description:"Advanced AI agents that handle reviews, follow-ups, and operations for {city} businesses.",longDesc:"Beyond chatbots, AI agents can independently perform complex tasks for your {city} business: monitoring and responding to reviews across all platforms, sending automated follow-up sequences to leads, managing appointment reminders, and even generating weekly social media content.",benefits:["Automated review monitoring & response","Lead follow-up sequences","Appointment reminder automation","Social media content generation","Customer re-engagement campaigns","Competitor monitoring alerts","Weekly performance summaries","Integration with your existing tools"],faqs:[{q:"What's the difference between AI chatbots and AI agents for {city} businesses?",a:"Chatbots respond to inbound conversations. AI agents proactively take actions — like monitoring {city} reviews and automatically drafting responses."},{q:"Can AI agents help manage reviews for my {city} business?",a:"Yes — our AI agents monitor every new review across Google, Yelp, and Facebook for your {city} business and draft personalized responses."},{q:"How do AI agents help with lead follow-up for {city} businesses?",a:"When a {city} lead doesn't book, our AI agent automatically follows up via text and email over 30 days."},{q:"Is AI agent automation safe for my {city} business reputation?",a:"All AI agent actions can be set to require your approval before executing."}]},
+  {slug:"local-seo-optimization",name:"Local SEO Optimization",shortName:"Local SEO",emoji:"🔍",price:"from $697/mo",headline:"Rank #1 in {city} for Your Most Valuable Keywords",description:"Full local SEO campaigns engineered to dominate {city} search results.",longDesc:"Our comprehensive local SEO campaigns for {city} businesses cover every ranking factor — on-page optimization, local content creation, technical SEO, link building, and schema markup — focused on putting your business at the top of {city} search results for the keywords your customers actually use.",benefits:["Local keyword research for {city}","On-page optimization","Local schema markup","{city} service area pages","Local link building","Technical SEO audit & fixes","Monthly ranking reports","Competitor gap analysis"],faqs:[{q:"How competitive is local SEO in {city}?",a:"{city} has approximately {competitors} businesses actively competing for the top local positions. With the right strategy, we typically achieve top-3 rankings within 60–90 days."},{q:"What local SEO keywords should my {city} business target?",a:"We research {city}-specific keywords, analyzing search volume, competition, and buyer intent — prioritizing high-commercial-intent searches."},{q:"How long does local SEO take to work in {city}?",a:"Most {city} clients see significant improvements within 30–60 days for less competitive terms and 60–90 days for highly competitive keywords."},{q:"Do you build local backlinks for {city} businesses?",a:"Yes — we pursue high-quality local backlinks from {city} news sites, local business directories, and community organizations."}]},
+  {slug:"social-media-handle-creation",name:"Social Media Handle Creation",shortName:"Social Setup",emoji:"📱",price:"from $197",headline:"Own Your {city} Brand Across Every Platform",description:"Professional social media account setup and branding for {city} businesses.",longDesc:"Before you can market your {city} business on social media, you need to own your brand name across every platform. We claim your handles on Facebook, Instagram, TikTok, LinkedIn, YouTube, X, and Pinterest — with consistent branding and proper local setup for {city} audiences.",benefits:["Facebook Business Page setup","Instagram Business account","TikTok Business account","LinkedIn Company page","YouTube channel","X (Twitter) business account","Consistent handle across all platforms","Branded cover photos & profiles"],faqs:[{q:"Why should my {city} business be on all social media platforms?",a:"Owning your brand name across platforms prevents competitors or impersonators from claiming your {city} business name."},{q:"Which social platforms matter most for {city} businesses?",a:"Facebook and Instagram are most critical for {city} consumer businesses. LinkedIn for B2B. TikTok for younger {city} demographics."},{q:"Will my social profiles be optimized for {city} local search?",a:"Yes — we optimize every bio with {city}-specific keywords, add your local address, phone, and website."},{q:"Can you secure my preferred handle if it's taken?",a:"We check availability across all platforms first and develop the best available alternatives."}]},
+  {slug:"social-media-management",name:"Social Media Management",shortName:"Social Media",emoji:"📣",price:"from $497/mo",headline:"Build a {city} Social Following That Drives Real Customers",description:"Done-for-you monthly social media management for {city} local businesses.",longDesc:"Consistent, high-quality social media content is what separates {city} businesses that thrive from those that struggle. Our done-for-you management handles everything — content creation, scheduling, community management, and analytics — tailored specifically for {city} audiences and local culture.",benefits:["16–20 posts per month","Custom branded graphics","Local {city} content themes","Story & reel creation","Community engagement","Hashtag strategy for {city}","Monthly analytics report","Competitor content analysis"],faqs:[{q:"How often will you post for my {city} business on social media?",a:"4–5 posts per week across your primary platforms, with content tailored to {city} events, seasons, and local culture."},{q:"Will the content mention {city} and feel local?",a:"Absolutely — we reference {city} events, local landmarks, community happenings, and seasonal relevance to make your content feel authentically local."},{q:"Do you create graphics and videos for {city} businesses?",a:"Yes — every post is custom-designed with your branding including graphics, carousel posts, and short-form video content."},{q:"How do you measure social media ROI for my {city} business?",a:"We track follower growth, engagement rates, website clicks, and lead conversions from social with monthly reporting."}]},
+  {slug:"branding-services",name:"Branding Services",shortName:"Branding",emoji:"🎨",price:"from $997",headline:"Build a {city} Brand That People Remember",description:"Complete brand identity packages that make {city} businesses unforgettable.",longDesc:"In a crowded {city} market, your brand is what makes customers choose you over competitors. Our complete branding packages create a cohesive visual identity — from logo to color palette to brand guidelines — that positions your {city} business as the premium, trustworthy choice in your category.",benefits:["Logo design (3 concepts)","Color palette & typography","Brand guidelines document","Business card design","Letterhead & email signature","Social media brand templates","Branded invoice/quote templates","Vehicle wrap/signage concepts"],faqs:[{q:"Does my {city} business really need professional branding?",a:"Research shows consumers are 81% more likely to do business with a brand they recognize. In {city}'s competitive market, professional branding directly impacts revenue."},{q:"How long does the branding process take for a {city} business?",a:"Our standard branding package takes 2–3 weeks from kickoff to final delivery, including revision rounds."},{q:"Will my {city} brand work across all digital and print materials?",a:"Yes — we deliver your brand in every format needed: web (PNG, SVG), print (PDF, EPS), and social media sizes."},{q:"Can you rebrand my existing {city} business?",a:"Absolutely. We specialize in evolving existing {city} business brands — refreshing logos and creating cohesive brand systems."}]},
+];
+
+// ══════════════════════════════════════════════
+// ROUTING & NAVIGATION
+// ══════════════════════════════════════════════
+function showView(id, extra) {
+  closeMobile();
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-' + id).classList.add('active');
+  window.scrollTo({top:0, behavior:'instant'});
+  initView(id, extra);
+  setTimeout(initFade, 100);
+}
+
+function initView(id, extra) {
+  if (id === 'home') initHome();
+  if (id === 'services') initServicesPage();
+  if (id === 'service' && extra) renderServicePage(extra);
+}
+
+function scrollToContact() {
+  closeMobile();
+  showView('home');
+  setTimeout(() => {
+    const c = document.getElementById('home-contact');
+    if (c) c.scrollIntoView({behavior:'smooth'});
+  }, 250);
+}
+
+// ══════════════════════════════════════════════
+// HOME
+// ══════════════════════════════════════════════
+function initHome() {
+  // Homepage schema injection
+  if (!document.getElementById('home-schema')) {
+    const s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.id = 'home-schema';
+    s.textContent = JSON.stringify(buildHomeSchema());
+    document.head.appendChild(s);
+  }
+  // Ticker
+  const t = document.getElementById('ticker-home');
+  if (t && !t.innerHTML) {
+    const items = SERVICES.map(s => `<span class="t-item">${s.emoji} ${s.shortName} <span class="t-sep">✦</span></span>`);
+    const doubled = [...items, ...items].join('');
+    t.innerHTML = doubled;
+  }
+  // What We Do accordion
+  const sg = document.getElementById('home-services');
+  if (sg && !sg.innerHTML) {
+    sg.innerHTML = WHAT_WE_DO.map((s, i) => `
+      <div class="wwd-item${i===0?' open':''}" onclick="toggleWwd(this)">
+        <div class="wwd-head">
+          <span class="wwd-num">0${i+1}</span>
+          <span class="wwd-em">${s.emoji}</span>
+          <span class="wwd-name">${s.name}</span>
+          <span class="wwd-plus">+</span>
+        </div>
+        <div class="wwd-body"><p>${s.desc} <span onclick="event.stopPropagation();showView('service','${s.slug}')" style="color:var(--gold);cursor:pointer;text-decoration:underline;">Learn more →</span></p></div>
+      </div>`).join('');
+  }
+  // Ranking factor dials
+  const fr = document.getElementById('home-factors');
+  if (fr && !fr.innerHTML) {
+    fr.innerHTML = RANK_FACTORS.map(f => `
+      <div class="factor-card">
+        <div class="factor-dial" style="--fill:${f.fill}"><span>${f.fill}</span></div>
+        <h4>${f.label}</h4>
+        <p>${f.body}</p>
+      </div>`).join('');
+  }
+  // Who this is for
+  const wg = document.getElementById('home-who');
+  if (wg && !wg.innerHTML) {
+    wg.innerHTML = WHO_FOR.map(w => `
+      <div class="who-card">
+        <span class="who-tag">${w.tag}</span>
+        <p>${w.body}</p>
+      </div>`).join('');
+  }
+  // Trust points
+  const tg = document.getElementById('home-trust');
+  if (tg && !tg.innerHTML) {
+    tg.innerHTML = TRUST_POINTS.map(t => `
+      <div class="trust-card">
+        <span class="t-icon">${t.tag}</span>
+        <p>${t.body}</p>
+      </div>`).join('');
+  }
+  // Homepage FAQ
+  const hf = document.getElementById('home-faq');
+  if (hf && !hf.innerHTML) {
+    hf.innerHTML = HOME_FAQS.map((f,i) => `
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">${f.q} <span class="faq-icon">+</span></div>
+        <div class="faq-a" id="home-faq-a-${i}">${f.a}</div>
+      </div>`).join('');
+  }
+  // Pricing
+  const hp = document.getElementById('home-pricing');
+  if (hp && !hp.innerHTML) hp.innerHTML = buildPricingHTML();
+
+  // Contact & Footer
+  if (!document.getElementById('home-contact').innerHTML) {
+    document.getElementById('home-contact').innerHTML = buildContact();
+    document.getElementById('home-footer').innerHTML = buildFooter();
+  }
+}
+
+// ══════════════════════════════════════════════
+// SERVICES PAGE
+// ══════════════════════════════════════════════
+function initServicesPage() {
+  const el = document.getElementById('services-list');
+  if (el && !el.innerHTML) {
+    el.innerHTML = `
+      <section style="padding:4rem 3rem;background:var(--pale);">
+        <div class="grid-border" style="grid-template-columns:repeat(3,1fr);">
+          ${SERVICES.map((s,i) => `
+            <div class="card" style="cursor:pointer;border-left:3px solid transparent;transition:border-color .2s,background .2s;" 
+                 onmouseenter="this.style.borderColor='var(--rust)'" 
+                 onmouseleave="this.style.borderColor='transparent'"
+                 onclick="showView('service','${s.slug}')">
+              <div style="font-size:2rem;margin-bottom:1rem;">${s.emoji}</div>
+              <h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:1.2rem;letter-spacing:.03em;margin-bottom:.5rem;">${s.name}</h3>
+              <p style="font-size:.82rem;line-height:1.65;color:var(--mid);margin-bottom:.8rem;">${s.description}</p>
+              <div style="font-size:.7rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--rust);">${s.price}</div>
+              <div style="font-size:.72rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--sage);margin-top:.4rem;opacity:0;transition:opacity .2s;" 
+                   onmouseenter="this.style.opacity=1" 
+                   onmouseleave="this.style.opacity=0">View service details →</div>
+            </div>`).join('')}
+        </div>
+      </section>
+      <div class="cta-band fi">
+        <div class="cta-band-t">Need a custom package for your Farmingdale business?<span>We build bundles around your goals and budget.</span></div>
+        <button class="btn btn-w" onclick="scrollToContact()">Get Custom Quote →</button>
+      </div>
+    `;
+    document.getElementById('services-footer').innerHTML = buildFooter();
+  }
+}
+
+// ══════════════════════════════════════════════
+// SERVICE PAGE
+// ══════════════════════════════════════════════
+function renderServicePage(slug) {
+  const svc = SERVICES.find(s => s.slug === slug);
+  if (!svc) return;
+  const el = document.getElementById('service-page-content');
+  document.title = `${svc.name} in Farmingdale, NY | Ranking Pro Max`;
+
+  el.innerHTML = `
+    <section class="svc-hero">
+      <div>
+        <div class="pg-breadcrumb"><span onclick="showView('home')">Home</span> / <span onclick="showView('services')">Services</span> / ${svc.name}</div>
+        <h1 class="svc-h1">${svc.emoji} <em>${svc.shortName}</em> in Farmingdale, NY</h1>
+        <p class="svc-long">${svc.longDesc.replace(/\{city\}/g,'Farmingdale')}</p>
+        <div class="btns">
+          <button class="btn btn-r" onclick="scrollToContact()">Get ${svc.shortName} Quote →</button>
+          <a href="https://wa.me/${AGENCY.whatsapp}" target="_blank" class="btn btn-g">💬 WhatsApp Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="benefits-box">
+          <h4>✦ What's Included</h4>
+          <ul class="benefits-list">
+            ${svc.benefits.map(b => `<li>${b.replace(/\{city\}/g,'Farmingdale')}</li>`).join('')}
+          </ul>
+          <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:1.8rem;color:var(--gold);">${svc.price}</div>
+            <div style="font-size:.72rem;color:rgba(255,255,255,.35);letter-spacing:.07em;text-transform:uppercase;">starting price · custom quotes available</div>
+            <button class="btn btn-r" style="margin-top:1rem;width:100%;justify-content:center;" onclick="scrollToContact()">Get Your Quote →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    ${svc.intro ? `
+    <section style="padding:3.5rem 1.2rem;max-width:820px;margin:0 auto;">
+      <div class="fi">
+        <div class="s-label">What This Service Is</div>
+        <h2 class="s-h2" style="font-size:clamp(1.8rem,5vw,3rem);">What Is <em>${svc.shortName}</em>?</h2>
+        <p style="color:var(--mid);font-size:.92rem;line-height:1.8;margin-top:1.2rem;">${svc.intro}</p>
+        ${svc.introSecondary ? `<h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:1.2rem;letter-spacing:.02em;margin-top:1.6rem;margin-bottom:.6rem;">Farmingdale's Local Search Landscape</h3><p style="color:var(--mid);font-size:.92rem;line-height:1.8;">${svc.introSecondary}</p>` : ''}
+        ${svc.whyNow ? `<h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:1.2rem;letter-spacing:.02em;margin-top:1.6rem;margin-bottom:.6rem;">Why Farmingdale Businesses Need This Now</h3><p style="color:var(--mid);font-size:.92rem;line-height:1.8;">${svc.whyNow}</p>` : ''}
+      </div>
+    </section>` : ''}
+
+    ${svc.whoFor ? `
+    <section style="padding:0 1.2rem 3.5rem;max-width:820px;margin:0 auto;">
+      <div class="fi">
+        <h2 class="s-h2" style="font-size:clamp(1.6rem,4vw,2.4rem);">Who This Is <em>For</em></h2>
+        <ul style="list-style:none;margin-top:1.2rem;">
+          ${svc.whoFor.map(w => `<li style="font-size:.9rem;color:var(--mid);line-height:1.7;padding:.7rem 0 .7rem 1.6rem;border-bottom:1px solid var(--border);position:relative;">
+            <span style="position:absolute;left:0;color:var(--rust);">✦</span>${w}</li>`).join('')}
+        </ul>
+      </div>
+    </section>` : ''}
+
+    ${svc.process ? `
+    <section style="padding:0 1.2rem 3.5rem;max-width:820px;margin:0 auto;">
+      <div class="fi">
+        <h2 class="s-h2" style="font-size:clamp(1.6rem,4vw,2.4rem);">Our <em>Process</em></h2>
+        <div style="margin-top:1.2rem;">
+          ${svc.process.map((p,i) => `
+            <div style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border);">
+              <div style="font-family:'Big Shoulders Display',sans-serif;font-size:1.6rem;color:var(--rust);flex-shrink:0;width:2rem;">0${i+1}</div>
+              <div>
+                <h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:1.05rem;letter-spacing:.02em;margin-bottom:.3rem;">${p.title}</h3>
+                <p style="font-size:.85rem;color:var(--mid);line-height:1.7;">${p.desc}</p>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </section>` : ''}
+
+    <section class="faq-sec">
+      <div class="fi" style="margin-bottom:2.5rem;">
+        <div class="s-label">FAQ</div>
+        <h2 class="s-h2">Common Questions About<br><em>${svc.shortName}</em> in Farmingdale</h2>
+      </div>
+        ${svc.faqs.map((f,i) => `
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">${f.q.replace(/\{city\}/g,'Farmingdale')} <span class="faq-icon">+</span></div>
+            <div class="faq-a" id="faq-a-${svc.slug}-${i}">${f.a.replace(/\{city\}/g,'Farmingdale').replace(/\{competitors\}/g,'47')}</div>
+          </div>`).join('')}
+    </section>
+
+    <script type="application/ld+json">${JSON.stringify(buildServiceSchema(svc))}<\/script>
+
+    <div class="cta-band fi">
+      <div class="cta-band-t">Get ${svc.name} for your Farmingdale business<span>Starting ${svc.price} · Free consultation included</span></div>
+      <button class="btn btn-w" onclick="scrollToContact()">Get My Free Audit →</button>
+    </div>
+
+    ${buildContact(`${svc.shortName} in Farmingdale`)}
+    ${buildFooter()}
+  `;
+}
+
+// ══════════════════════════════════════════════
+// SHARED COMPONENTS
+// ══════════════════════════════════════════════
+function buildHomeSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": AGENCY.name,
+        "telephone": AGENCY.phoneRaw,
+        "email": AGENCY.email,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 Carmans Ct",
+          "addressLocality": "Farmingdale",
+          "addressRegion": "NY",
+          "postalCode": "11735",
+          "addressCountry": "US"
+        },
+        "areaServed": {"@type": "City", "name": "Farmingdale"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": HOME_FAQS.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": {"@type": "Answer", "text": f.a}
+        }))
+      },
+      {
+        "@type": "WebPage",
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".sub", ".faq-a"]}
+      }
+    ]
+  };
+}
+
+function buildServiceSchema(svc) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": AGENCY.name,
+        "telephone": AGENCY.phoneRaw,
+        "email": AGENCY.email,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 Carmans Ct",
+          "addressLocality": "Farmingdale",
+          "addressRegion": "NY",
+          "postalCode": "11735",
+          "addressCountry": "US"
+        },
+        "areaServed": {"@type": "City", "name": "Farmingdale"},
+        "makesOffer": {"@type": "Offer", "itemOffered": {"@type": "Service", "name": svc.name}}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": svc.faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q.replace(/\{city\}/g,'Farmingdale'),
+          "acceptedAnswer": {"@type": "Answer", "text": f.a.replace(/\{city\}/g,'Farmingdale').replace(/\{competitors\}/g,'47')}
+        }))
+      },
+      {
+        "@type": "WebPage",
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".svc-long", ".faq-a"]}
+      }
+    ]
+  };
+}
+
+function buildContact(context) {
+  const ctx = context || 'General Inquiry';
+  return `
+    <section class="contact-sec" id="contact-form">
+      <div class="contact-l fi">
+        <div class="s-label">Book a Call / Get a Quote</div>
+        <h2>Let's Grow<br>Your Business</h2>
+        <p style="margin-bottom:1.5rem;">Fill out the form below — we'll send you a WhatsApp message, call you back, and email your quote to <strong>rankingpromax@gmail.com</strong> within 2 hours.</p>
+
+        <div class="ci">
+          <span>📞</span>
+          <div>
+            <div style="font-weight:600;font-size:.85rem;">Call to Book</div>
+            <a href="tel:+15165492876" style="color:var(--rust);font-size:1rem;font-weight:700;">(516) 549-2876</a>
+          </div>
+        </div>
+        <div class="ci">
+          <span>💬</span>
+          <div>
+            <div style="font-weight:600;font-size:.85rem;">WhatsApp Us</div>
+            <a href="https://wa.me/15165492876" target="_blank" style="color:var(--sage);font-size:1rem;font-weight:700;">(516) 549-2876</a>
+          </div>
+        </div>
+        <div class="ci"><span>📧</span><span>rankingpromax@gmail.com</span></div>
+        <div class="ci"><span>📍</span><span>8 Carmans Ct, Farmingdale NY 11735</span></div>
+        <div class="ci"><span>🕐</span><span>Mon–Fri 9AM–6PM EST · Sat 10AM–2PM</span></div>
+
+        <div style="margin-top:1.5rem;padding:1.2rem;background:var(--ink);color:var(--cream);">
+          <div style="font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;">What happens after you submit?</div>
+          <div style="font-size:.8rem;line-height:1.7;color:rgba(255,255,255,.55);">
+            ① We send you a WhatsApp message instantly<br>
+            ② We call you within 2 hours to discuss your needs<br>
+            ③ You receive a detailed quote by email<br>
+            ④ We schedule a free strategy call
+          </div>
+        </div>
+      </div>
+
+      <div class="fi">
+        <form class="contact-form" id="main-contact-form" onsubmit="handleForm(event)">
+          <div class="f-row">
+            <div class="fg"><label>First Name *</label><input type="text" id="f-fname" placeholder="John" required></div>
+            <div class="fg"><label>Last Name *</label><input type="text" id="f-lname" placeholder="Smith" required></div>
+          </div>
+          <div class="f-row">
+            <div class="fg"><label>Email Address *</label><input type="email" id="f-email" placeholder="john@yourbusiness.com" required></div>
+            <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" id="f-phone" placeholder="(516) 000-0000" required></div>
+          </div>
+          <div class="f-row">
+            <div class="fg"><label>Business Name *</label><input type="text" id="f-biz" placeholder="Your Business Name" required></div>
+            <div class="fg"><label>Your Area of Farmingdale</label>
+              <input type="text" id="f-city" placeholder="e.g. Main Street, Route 109, Route 110...">
+            </div>
+          </div>
+          <div class="fg"><label>Service(s) You Need *</label>
+            <select id="f-service" required>
+              <option value="">Select a service...</option>
+              <optgroup label="── Individual Services ──">
+                <option value="GBP Claiming &amp; Verification — $150">📍 GBP Claiming &amp; Verification — $150</option>
+                <option value="GBP Optimization — $260">⭐ GBP Optimization — $260</option>
+                <option value="Monthly GBP Retainer — $100/mo">🔄 Monthly GBP Retainer — $100/mo</option>
+                <option value="Citation Building (20 dirs) — $150">📋 Citation Building (20 directories) — $150</option>
+                <option value="Simple Website — $300">🌐 Simple Website — $300</option>
+                <option value="Complete Website Package — $750">🌐 Complete Website Package — $750</option>
+                <option value="Programmatic Website — $1,500">🌐 Programmatic Website — $1,500</option>
+                <option value="Question-Based Chatbot — $250">💬 Question-Based Chatbot — $250</option>
+                <option value="AI Chatbot — $500">🤖 AI Chatbot — $500</option>
+                <option value="AI Agents — from $250">🦾 AI Agents — from $250</option>
+                <option value="Local SEO Optimization — $300/mo">🔍 Local SEO Optimization — $300/mo</option>
+                <option value="Social Media Handle Creation — $100">📱 Social Media Handle Creation — $100</option>
+                <option value="Social Media Management — $300/mo">📣 Social Media Management — $300/mo</option>
+                <option value="Branding Services — $1,500">🎨 Branding Services — $1,500</option>
+              </optgroup>
+              <optgroup label="── Bundle Packages ──">
+                <option value="Starter Bundle — $397/mo">Starter Bundle — $397/mo</option>
+                <option value="Growth Bundle — $797/mo">Growth Bundle — $797/mo (Most Popular)</option>
+                <option value="Dominate Bundle — $1,497/mo">Dominate Bundle — $1,497/mo</option>
+              </optgroup>
+              <option value="Custom Package — Multiple Services">Custom Package — Multiple Services</option>
+            </select>
+          </div>
+          <div class="fg"><label>Tell Us About Your Business</label>
+            <textarea id="f-msg" placeholder="What's your biggest challenge? What results do you want to achieve? Any specific competitors you want to beat?" style="min-height:100px;"></textarea>
+          </div>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-r" style="flex:1;justify-content:center;">📩 Send & Get Quote →</button>
+            <button type="button" class="btn btn-g" style="flex:1;justify-content:center;" onclick="whatsappDirect()">💬 WhatsApp Directly</button>
+          </div>
+          <div style="font-size:.72rem;color:var(--mid);text-align:center;margin-top:.5rem;">
+            By submitting, you'll receive a WhatsApp message, a callback, and an email quote within 2 hours.
+          </div>
+        </form>
+        <div id="form-success" style="display:none;background:var(--sage);color:#fff;padding:2rem;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:.5rem;">✅</div>
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-size:1.5rem;letter-spacing:.04em;">Message Sent!</div>
+          <div style="font-size:.88rem;opacity:.85;line-height:1.7;margin-top:.5rem;">
+            We've received your inquiry.<br>
+            Check your WhatsApp &amp; email for confirmation.<br>
+            We'll call you within 2 hours.
+          </div>
+          <div style="margin-top:1.2rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
+            <a href="tel:+15165492876" class="btn" style="background:rgba(255,255,255,.2);color:#fff;font-size:.8rem;">📞 Call Us Now</a>
+            <a href="https://wa.me/15165492876" target="_blank" class="btn" style="background:rgba(255,255,255,.2);color:#fff;font-size:.8rem;">💬 Open WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+
+function buildFooter() {
+  return `
+    <footer>
+      <div class="f-brand">
+        <a class="logo" onclick="showView('home')">Ranking<span style="color:var(--rust)"> Pro Max</span></a>
+        <p style="margin-top:.8rem;">Farmingdale NY local SEO company and SEO agency near Farmingdale NY. Helping Farmingdale businesses rank #1 on Google.</p>
+        <div style="margin-top:1.2rem;font-size:.78rem;">
+          <div style="margin-bottom:.4rem;"><a href="tel:${AGENCY.phoneRaw}" style="color:rgba(255,255,255,.5);">📞 ${AGENCY.phone}</a></div>
+          <div style="margin-bottom:.4rem;"><a href="https://wa.me/${AGENCY.whatsapp}" target="_blank" style="color:rgba(255,255,255,.5);">💬 WhatsApp: ${AGENCY.phone}</a></div>
+          <div style="color:rgba(255,255,255,.35);">📍 ${AGENCY.address}</div>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>${SERVICES.slice(0,6).map(s => `<li onclick="showView('service','${s.slug}')">${s.shortName}</li>`).join('')}</ul>
+      </div>
+      <div>
+        <h5>More Services</h5>
+        <ul>${SERVICES.slice(6).map(s => `<li onclick="showView('service','${s.slug}')">${s.shortName}</li>`).join('')}</ul>
+      </div>
+    </footer>
+    <div class="f-bottom">
+      <span>© 2026 Ranking Pro Max. All rights reserved. · ${AGENCY.address}</span>
+      <span>Serving Farmingdale, NY</span>
+    </div>`;
+}
+
+// ══════════════════════════════════════════════
+// UTILITIES
+// ══════════════════════════════════════════════
+function toggleFaq(el) {
+  el.closest('.faq-item').classList.toggle('open');
+}
+
+function toggleWwd(el) {
+  el.classList.toggle('open');
+}
+
+// ── FORM SUBMIT: WhatsApp + Email ────────────────────────
+function handleForm(e) {
+  e.preventDefault();
+
+  const fname   = document.getElementById('f-fname')?.value   || '';
+  const lname   = document.getElementById('f-lname')?.value   || '';
+  const email   = document.getElementById('f-email')?.value   || '';
+  const phone   = document.getElementById('f-phone')?.value   || '';
+  const biz     = document.getElementById('f-biz')?.value     || '';
+  const city    = document.getElementById('f-city')?.value    || '';
+  const service = document.getElementById('f-service')?.value || '';
+  const msg     = document.getElementById('f-msg')?.value     || '';
+
+  const fullName = `${fname} ${lname}`.trim();
+  const now = new Date().toLocaleString('en-US', {timeZone:'America/New_York'});
+
+  // ── WhatsApp message to agency ──
+  const waMsg = encodeURIComponent(
+    `🔔 *NEW BOOKING REQUEST — Ranking Pro Max*\n\n` +
+    `👤 *Name:* ${fullName}\n` +
+    `📞 *Phone:* ${phone}\n` +
+    `📧 *Email:* ${email}\n` +
+    `🏢 *Business:* ${biz}\n` +
+    `📍 *City:* ${city || 'Not specified'}\n` +
+    `🛠️ *Service:* ${service}\n` +
+    `💬 *Message:* ${msg || 'No additional message'}\n\n` +
+    `⏰ *Submitted:* ${now}\n` +
+    `━━━━━━━━━━━━━━━━━━━━\n` +
+    `Please follow up within 2 hours!`
+  );
+  window.open(`https://wa.me/15165492876?text=${waMsg}`, '_blank');
+
+  // ── Email via mailto (opens email client) ──
+  const subject = encodeURIComponent(`New Booking: ${service} — ${fullName}`);
+  const body = encodeURIComponent(
+    `NEW BOOKING REQUEST — Ranking Pro Max\n` +
+    `=====================================\n\n` +
+    `Name:     ${fullName}\n` +
+    `Phone:    ${phone}\n` +
+    `Email:    ${email}\n` +
+    `Business: ${biz}\n` +
+    `City:     ${city || 'Not specified'}\n` +
+    `Service:  ${service}\n\n` +
+    `Message:\n${msg || 'No additional message'}\n\n` +
+    `Submitted: ${now}\n\n` +
+    `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+    `Reply to customer email: ${email}\n` +
+    `Customer phone: ${phone}`
+  );
+  setTimeout(() => {
+    window.location.href = `mailto:rankingpromax@gmail.com?subject=${subject}&body=${body}`;
+  }, 800);
+
+  // ── Show success state ──
+  document.getElementById('main-contact-form').style.display = 'none';
+  const success = document.getElementById('form-success');
+  if (success) success.style.display = 'block';
+}
+
+// ── BOOK A CALL direct ──
+function bookCall() {
+  window.location.href = 'tel:+15165492876';
+}
+
+// ── WHATSAPP QUOTE from pricing card ──
+function whatsappQuote(plan) {
+  const msg = encodeURIComponent(
+    `Hi Ranking Pro Max! 👋\n\nI'm interested in the *${plan}*.\n\nCan you send me more details and get me started?\n\nMy business is: [Your Business Name]\nMy city: [Your City]`
+  );
+  window.open(`https://wa.me/15165492876?text=${msg}`, '_blank');
+}
+
+// ── WHATSAPP DIRECT from contact form ──
+function whatsappDirect() {
+  const fname   = document.getElementById('f-fname')?.value || '';
+  const biz     = document.getElementById('f-biz')?.value  || '';
+  const service = document.getElementById('f-service')?.value || 'your service';
+  const msg = encodeURIComponent(
+    `Hi Ranking Pro Max! 👋\n\nI'd like to get a quote for *${service}*.\n\n` +
+    `My name is ${fname || '[Your Name]'} and my business is ${biz || '[Business Name]'}.\n\n` +
+    `Please contact me to discuss!`
+  );
+  window.open(`https://wa.me/15165492876?text=${msg}`, '_blank');
+}
+
+function initFade() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('vis'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fi:not(.vis)').forEach(el => obs.observe(el));
+}
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('shadow', window.scrollY > 20);
+});
+
+
+// ══════════════════════════════════════════════
+// MOBILE MENU
+// ══════════════════════════════════════════════
+function toggleMobile() {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.querySelector('.hamburger');
+  const isOpen = menu.classList.toggle('open');
+  btn.classList.toggle('active', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+function closeMobile() {
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.querySelector('.hamburger').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ══════════════════════════════════════════════
+// SITEMAP VIEW
+// ══════════════════════════════════════════════
+// ══════════════════════════════════════════════
+// PRICING
+// ══════════════════════════════════════════════
+function buildPricingHTML() {
+  // Individual service prices
+  const indivServices = [
+    {emoji:'📍', name:'GBP Claiming & Verification', price:'$150', note:'One-time setup'},
+    {emoji:'⭐', name:'GBP Optimization', price:'$260', note:'One-time'},
+    {emoji:'🔄', name:'Monthly GBP Retainer', price:'$100', note:'Per month'},
+    {emoji:'📋', name:'Citation Building', price:'$150', note:'20 directories'},
+    {emoji:'🌐', name:'Simple Website', price:'$300', note:'One-time'},
+    {emoji:'🌐', name:'Complete Website Package', price:'$750', note:'One-time'},
+    {emoji:'🌐', name:'Programmatic Website', price:'$1,500', note:'One-time'},
+    {emoji:'💬', name:'Question-Based Chatbot', price:'$250', note:'Setup fee'},
+    {emoji:'🤖', name:'AI Chatbot', price:'$500', note:'Setup fee'},
+    {emoji:'🦾', name:'AI Agents', price:'From $250', note:'Custom scope'},
+    {emoji:'🔍', name:'Local SEO Optimization', price:'$300', note:'Per month'},
+    {emoji:'📱', name:'Social Media Handle Creation', price:'$100', note:'One-time'},
+    {emoji:'📣', name:'Social Media Management', price:'$300', note:'Per month'},
+    {emoji:'🎨', name:'Branding Services', price:'$1,500', note:'Full package'},
+  ];
+
+  // Bundle plans
+  const plans = [
+    {
+      name:'Starter Bundle', price:'397', per:'/ month',
+      badge:null,
+      desc:'Best for new Farmingdale businesses',
+      features:[
+        'GBP Claiming & Verification ($150 value)',
+        'GBP Optimization ($260 value)',
+        '20 Citation Submissions ($150 value)',
+        'Social Media Handle Setup ($100 value)',
+        'Monthly Performance Report',
+        'Email & Phone Support',
+      ],
+      saving:'Save $263',
+      btnColor:'var(--ink)',
+    },
+    {
+      name:'Growth Bundle', price:'797', per:'/ month',
+      badge:'Most Popular',
+      desc:'Best for growing Farmingdale businesses',
+      features:[
+        'Everything in Starter',
+        'Monthly GBP Retainer ($100 value)',
+        'Full Local SEO Campaign ($300 value)',
+        'AI Question Chatbot ($250 value)',
+        'Social Media Management ($300 value)',
+        'Dedicated Account Manager',
+        'Weekly Ranking Updates',
+        'WhatsApp Priority Support',
+      ],
+      saving:'Save $453',
+      btnColor:'var(--rust)',
+    },
+    {
+      name:'Dominate Bundle', price:'1,497', per:'/ month',
+      badge:null,
+      desc:'For Farmingdale market leaders',
+      features:[
+        'Everything in Growth',
+        'Complete Website Package ($750 value)',
+        'AI Agents ($250+ value)',
+        'Full Branding Package ($1,500 value)',
+        'AI Chatbot ($500 value)',
+        'Social Media Suite — 6 platforms',
+        'Priority Phone & WhatsApp Support',
+        'Competitor Takeover Strategy',
+      ],
+      saving:'Save $1,800+',
+      btnColor:'var(--sage)',
+    },
+  ];
+
+  const indivHTML = `
+    <div style="margin-bottom:5rem;">
+      <div style="text-align:center;margin-bottom:2.5rem;">
+        <div class="s-label" style="justify-content:center;">À La Carte</div>
+        <h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:2rem;letter-spacing:.03em;">Individual Service Pricing</h3>
+        <p style="color:var(--mid);font-size:.88rem;margin-top:.5rem;">Pick exactly what you need — no bundle required.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;background:var(--border);border:1.5px solid var(--border);max-width:980px;margin:0 auto;" class="indiv-grid">
+        ${indivServices.map(s => `
+          <div style="background:var(--pale);padding:1.5rem 1.4rem;transition:background .2s;" onmouseenter="this.style.background='var(--cream)'" onmouseleave="this.style.background='var(--pale)'">
+            <div style="font-size:1.5rem;margin-bottom:.6rem;">${s.emoji}</div>
+            <div style="font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;line-height:1.4;">${s.name}</div>
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:1.6rem;color:var(--rust);letter-spacing:.02em;">${s.price}</div>
+            <div style="font-size:.68rem;color:var(--mid);text-transform:uppercase;letter-spacing:.07em;margin-top:.2rem;">${s.note}</div>
+          </div>`).join('')}
+      </div>
+      <div style="text-align:center;margin-top:1.5rem;">
+        <p style="font-size:.82rem;color:var(--mid);">📞 Call to book: <a href="tel:+15165492876" style="color:var(--rust);font-weight:600;">(516) 549-2876</a> &nbsp;·&nbsp; 💬 <a href="https://wa.me/15165492876" target="_blank" style="color:var(--sage);font-weight:600;">WhatsApp Us</a></p>
+      </div>
+    </div>`;
+
+  const bundleHTML = `
+    <div>
+      <div style="text-align:center;margin-bottom:2.5rem;">
+        <div class="s-label" style="justify-content:center;">Bundle & Save</div>
+        <h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:2rem;letter-spacing:.03em;">Monthly Bundle Packages</h3>
+        <p style="color:var(--mid);font-size:.88rem;margin-top:.5rem;">Combine services and save hundreds every month.</p>
+      </div>
+      <div class="pricing-grid">
+        ${plans.map((p,i) => `
+          <div class="price-card ${i===1?'feat':''}">
+            ${p.badge ? `<div class="price-badge">${p.badge}</div>` : '<div style="height:1.9rem;"></div>'}
+            <div class="price-plan">${p.name}</div>
+            <div class="price-amt"><sup>$</sup>${p.price}</div>
+            <div class="price-per">${p.per} · ${p.desc}</div>
+            <div style="display:inline-block;background:${i===1?'rgba(212,168,67,.2)':'rgba(74,103,65,.12)'};color:${i===1?'var(--gold)':'var(--sage)'};font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .75rem;border-radius:2px;margin-bottom:1.2rem;">${p.saving}</div>
+            <ul class="price-feats">
+              ${p.features.map(f => `<li>${f}</li>`).join('')}
+            </ul>
+            <button class="btn" style="background:${p.btnColor};color:#fff;width:100%;justify-content:center;margin-bottom:.6rem;" onclick="bookCall()">📞 Book a Call →</button>
+            <button class="btn" style="background:transparent;color:${i===1?'rgba(255,255,255,.6)':'var(--ink)'};border:1.5px solid ${i===1?'rgba(255,255,255,.2)':'var(--border)'};width:100%;justify-content:center;font-size:.75rem;" onclick="whatsappQuote('${p.name}')">💬 WhatsApp Quote</button>
+          </div>`).join('')}
+      </div>
+    </div>`;
+
+  const quickWins30 = [
+    {emoji:'💬', name:'Auto-Reply Agent for Google Business Messages', price:'$30', note:'Per month'},
+    {emoji:'📩', name:'Auto-Reply Bot for Facebook Messenger', price:'$30', note:'Per month'},
+    {emoji:'📸', name:'Auto-Reply Bot for Instagram DMs', price:'$30', note:'Per month'},
+    {emoji:'⭐', name:'Google Review Request SMS Templates (10)', price:'$30', note:'One-time'},
+    {emoji:'💚', name:'WhatsApp Business Setup & Auto-Greeting', price:'$30', note:'One-time'},
+    {emoji:'📄', name:'Google Business Profile Audit Report', price:'$30', note:'One-time'},
+    {emoji:'🔎', name:'Competitor Analysis Mini-Report (3)', price:'$30', note:'One-time'},
+    {emoji:'🎨', name:'5 Branded Social Post Templates', price:'$30', note:'One-time'},
+    {emoji:'✍️', name:'Business Bio Writing (Google, IG, FB)', price:'$30', note:'One-time'},
+    {emoji:'🔑', name:'Keyword Research Report (Top 10)', price:'$30', note:'One-time'},
+    {emoji:'🗺️', name:'Google Maps Embed + Click-to-Call', price:'$30', note:'One-time'},
+    {emoji:'✅', name:'"Near Me" SEO Checklist Audit', price:'$30', note:'One-time'},
+    {emoji:'📊', name:'Monthly Review Monitoring & Alerts', price:'$30', note:'Per month'},
+    {emoji:'📱', name:'QR Code Menu / Service List (PDF)', price:'$30', note:'One-time'},
+    {emoji:'📷', name:'Facebook/Instagram Profile Optimization', price:'$30', note:'One-time'},
+    {emoji:'🎵', name:'TikTok Business Account Setup', price:'$30', note:'One-time'},
+    {emoji:'📈', name:'Monthly Rank Tracking Report (5 kw)', price:'$30', note:'Per month'},
+    {emoji:'❓', name:'Google Business Q&A Setup (10 Q&As)', price:'$30', note:'One-time'},
+    {emoji:'📝', name:'Contact Page + Google Form Lead Capture', price:'$30', note:'One-time'},
+    {emoji:'🤖', name:'AI-Generated "About Us" Page Copy', price:'$30', note:'One-time'},
+  ];
+
+  const quickWins50 = [
+    {emoji:'📅', name:'Appointment Booking Page (Calendly setup)', price:'$50', note:'One-time'},
+    {emoji:'📆', name:'Google Calendar Booking + Confirmation Email', price:'$50', note:'One-time'},
+    {emoji:'💬', name:'WhatsApp Booking Flow + Auto-Confirmation', price:'$50', note:'One-time'},
+    {emoji:'📄', name:'Mini Landing Page (One Service + Booking)', price:'$50', note:'One-time'},
+    {emoji:'📘', name:'Facebook Appointment Tab Setup', price:'$50', note:'One-time'},
+    {emoji:'✉️', name:'Email Capture Form + Welcome Automation', price:'$50', note:'One-time'},
+    {emoji:'📲', name:'SMS Appointment Reminder Setup', price:'$50', note:'Per month'},
+    {emoji:'📋', name:'"Request a Quote" Form + Email Alerts', price:'$50', note:'One-time'},
+    {emoji:'💳', name:'Online Payment Link (Stripe/PayPal)', price:'$50', note:'One-time'},
+    {emoji:'🤝', name:'Referral Program Page Setup', price:'$50', note:'One-time'},
+  ];
+
+  const quickWinsHTML = `
+    <div style="margin-top:5rem;">
+      <div style="text-align:center;margin-bottom:2.5rem;">
+        <div class="s-label" style="justify-content:center;">Quick Wins</div>
+        <h3 style="font-family:'Big Shoulders Display',sans-serif;font-size:2rem;letter-spacing:.03em;">Starter Tools — From $30</h3>
+        <p style="color:var(--mid);font-size:.88rem;margin-top:.5rem;max-width:520px;margin-left:auto;margin-right:auto;">Small, low-commitment tools for Farmingdale businesses not ready for a full campaign yet. No contract, no setup calls — just the tool.</p>
+      </div>
+      <div style="text-align:center;margin-bottom:1rem;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rust);">$30 Tools</div>
+      </div>
+      <div class="qw-grid" style="display:grid;gap:1.5px;background:var(--border);border:1.5px solid var(--border);max-width:980px;margin:0 auto 3rem;">
+        ${quickWins30.map(s => `
+          <div style="background:var(--pale);padding:1.3rem 1.2rem;transition:background .2s;" onmouseenter="this.style.background='var(--cream)'" onmouseleave="this.style.background='var(--pale)'">
+            <div style="font-size:1.3rem;margin-bottom:.5rem;">${s.emoji}</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--ink);margin-bottom:.4rem;line-height:1.4;">${s.name}</div>
+            <div style="display:flex;align-items:baseline;justify-content:space-between;">
+              <div><span style="font-family:'Big Shoulders Display',sans-serif;font-size:1.3rem;color:var(--rust);">${s.price}</span> <span style="font-size:.65rem;color:var(--mid);text-transform:uppercase;">${s.note}</span></div>
+              <a href="https://wa.me/15165492876?text=${encodeURIComponent('Hi! I want to order: ' + s.name + ' ('+s.price+')')}" target="_blank" style="font-size:.68rem;font-weight:700;color:var(--sage);white-space:nowrap;">Order →</a>
+            </div>
+          </div>`).join('')}
+      </div>
+      <div style="text-align:center;margin-bottom:1rem;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rust);">$50 Booking Tools</div>
+      </div>
+      <div class="qw-grid" style="display:grid;gap:1.5px;background:var(--border);border:1.5px solid var(--border);max-width:980px;margin:0 auto;">
+        ${quickWins50.map(s => `
+          <div style="background:var(--pale);padding:1.3rem 1.2rem;transition:background .2s;" onmouseenter="this.style.background='var(--cream)'" onmouseleave="this.style.background='var(--pale)'">
+            <div style="font-size:1.3rem;margin-bottom:.5rem;">${s.emoji}</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--ink);margin-bottom:.4rem;line-height:1.4;">${s.name}</div>
+            <div style="display:flex;align-items:baseline;justify-content:space-between;">
+              <div><span style="font-family:'Big Shoulders Display',sans-serif;font-size:1.3rem;color:var(--rust);">${s.price}</span> <span style="font-size:.65rem;color:var(--mid);text-transform:uppercase;">${s.note}</span></div>
+              <a href="https://wa.me/15165492876?text=${encodeURIComponent('Hi! I want to order: ' + s.name + ' ('+s.price+')')}" target="_blank" style="font-size:.68rem;font-weight:700;color:var(--sage);white-space:nowrap;">Order →</a>
+            </div>
+          </div>`).join('')}
+      </div>
+      <div style="text-align:center;margin-top:1.5rem;">
+        <p style="font-size:.82rem;color:var(--mid);">💬 Fastest way to order: <a href="https://wa.me/15165492876" target="_blank" style="color:var(--sage);font-weight:600;">message us on WhatsApp</a> with the tool name.</p>
+      </div>
+    </div>`;
+
+  return indivHTML + bundleHTML + quickWinsHTML;
+}
+
+// ══════════════════════════════════════════════
+// UPDATE INIT VIEW TO INCLUDE SITEMAP
+// ══════════════════════════════════════════════
+const origInitView = initView;
+
+// ══ BOOT ══
+initHome();
+setTimeout(initFade, 150);
+</script>
+
+<!-- ══ MOBILE STICKY CTA ════════════════════════════════════ -->
+<div id="mobile-fab" style="
+  position:fixed;bottom:1.2rem;right:1.2rem;
+  display:flex;flex-direction:column;gap:.6rem;
+  z-index:490;
+">
+  <a href="https://wa.me/15165492876" target="_blank" style="
+    width:52px;height:52px;border-radius:50%;
+    background:#25D366;color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.5rem;box-shadow:0 4px 20px rgba(37,211,102,.4);
+    text-decoration:none;transition:transform .2s;
+  " onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform='scale(1)'">💬</a>
+  <a href="tel:+15165492876" style="
+    width:52px;height:52px;border-radius:50%;
+    background:var(--rust);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.4rem;box-shadow:0 4px 20px rgba(200,75,47,.4);
+    text-decoration:none;transition:transform .2s;
+  " onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform='scale(1)'">📞</a>
+</div>
+<style>
+@media(min-width:641px){#mobile-fab{display:none!important;}}
+</style>
+
+</body>
+</html>
