@@ -7,12 +7,12 @@ export function RankingFactors() {
         <div className="factor-card" key={i}>
           <div
             className="factor-dial"
-            style={{ '--fill': f.fill } as React.CSSProperties}
+            style={{ '--fill': `${f.pct}%` } as React.CSSProperties}
           >
-            <span>{f.fill}</span>
+            <span>{f.pct}%</span>
           </div>
           <h4>{f.label}</h4>
-          <p>{f.body}</p>
+          <p>{f.desc}</p>
         </div>
       ))}
     </div>
