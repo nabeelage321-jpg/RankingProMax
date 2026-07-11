@@ -10,6 +10,9 @@ import { CTABand } from '@/components/site/CTABand';
 import { ContactSection } from '@/components/site/ContactSection';
 import { FAQSchema, BusinessSchema, SpeakableSchema, WebsiteSchema } from '@/components/site/Schema';
 import { AnimatedCounter } from '@/components/site/AnimatedCounter';
+import { RankingFactors } from '@/components/site/RankingFactors';
+import { BeforeAfter } from '@/components/site/BeforeAfter';
+import { LocalSeoGauge } from '@/components/site/LocalSeoGauge';
 
 const SVC_ICONS: Record<string, typeof MapPin> = {
   'gbp-claiming-verification': MapPin,
@@ -36,14 +39,15 @@ export default function HomePage() {
       <WebsiteSchema />
       <SpeakableSchema url="https://rankingpromax.com/" />
       <FAQSchema faqs={HOME_FAQS} />
+
       {/* HERO */}
       <section className="hero" style={{ marginTop: 'var(--nav-h)' }}>
         <div className="hero-l">
           <span className="tag">Local SEO Agency · Farmingdale, NY</span>
-          <h1 className="h1">
+          <h1 className="h1" id="hero-title">
             We get Farmingdale<br />businesses <em>found.</em>
           </h1>
-          <p className="sub" style={{ maxWidth: '520px' }}>
+          <p className="sub" id="hero-subtitle" style={{ maxWidth: '520px' }}>
             Google Business Profile management, local SEO, citations, websites, and AI chatbots — built for businesses along Route 109, Route 110, and Main Street that need to show up when someone nearby searches &quot;near me.&quot;
           </p>
           <div className="btns">
@@ -121,30 +125,44 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* RANKING FACTOR DIALS */}
-      <section style={{ padding: '3.5rem 1.2rem', background: 'var(--cream)' }}>
+      {/* RANKING FACTORS — ANIMATED INFOGRAPHIC */}
+      <section style={{ padding: '4rem 1.2rem', background: 'var(--cream)' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <span className="s-label">Ranking Factors</span>
           <h2 className="s-h2" style={{ marginBottom: '0.8rem' }}>What actually moves the needle.</h2>
-          <p className="sub" style={{ maxWidth: '600px' }}>
+          <p className="sub" style={{ maxWidth: '600px', marginBottom: '2.5rem' }}>
             These are the factors Google weighs for local 3-pack rankings. Most Farmingdale businesses are leaving points on the table in at least two or three of them.
           </p>
-          <div className="factor-row">
-            {RANK_FACTORS.map((factor, i) => (
-              <div className="factor-card" key={i}>
-                <div className="factor-dial" style={{ ['--fill' as string]: `${factor.pct}%` }}>
-                  <span>{factor.pct}%</span>
-                </div>
-                <h4>{factor.label}</h4>
-                <p>{factor.desc}</p>
-              </div>
-            ))}
-          </div>
+          <RankingFactors />
+        </div>
+      </section>
+
+      {/* BEFORE / AFTER INFOGRAPHIC */}
+      <section style={{ padding: '4rem 1.2rem', background: 'var(--pale)' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <span className="s-label">The Difference</span>
+          <h2 className="s-h2" style={{ marginBottom: '0.8rem' }}>Before vs after<br />optimization.</h2>
+          <p className="sub" style={{ maxWidth: '600px', marginBottom: '2.5rem' }}>
+            What your Google Business Profile looks like before we start, and what it looks like when we&apos;re done.
+          </p>
+          <BeforeAfter />
+        </div>
+      </section>
+
+      {/* LOCAL SEO SCORE GAUGE */}
+      <section style={{ padding: '4rem 1.2rem', background: 'var(--cream)' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+          <span className="s-label">Free Score</span>
+          <h2 className="s-h2" style={{ marginBottom: '1.5rem' }}>Where does your<br />business stand?</h2>
+          <LocalSeoGauge />
+          <Link href="/tools/local-seo-score" className="btn btn-r" style={{ marginTop: '2rem' }}>
+            Get Your Full Score <ArrowRight size={16} />
+          </Link>
         </div>
       </section>
 
       {/* PERSONA GRID */}
-      <section style={{ padding: '3.5rem 1.2rem' }}>
+      <section style={{ padding: '4rem 1.2rem' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <span className="s-label">Who This Is For</span>
           <h2 className="s-h2" style={{ marginBottom: '0.8rem' }}>Built for Farmingdale<br />businesses like yours.</h2>
@@ -224,7 +242,7 @@ export default function HomePage() {
                 {step.icon}
                 <span className="step-n">{i + 1}</span>
               </div>
-              <h4>{step.name}</h4>
+              <h3 style={{ fontFamily: 'var(--font-display), Big Shoulders Display, sans-serif', fontSize: '1.15rem', letterSpacing: '0.03em', marginBottom: '0.4rem' }}>{step.name}</h3>
               <p>{step.desc}</p>
             </div>
           ))}
