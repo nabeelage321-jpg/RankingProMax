@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { AGENCY } from '@/lib/agency';
 import { SERVICES } from '@/lib/services';
