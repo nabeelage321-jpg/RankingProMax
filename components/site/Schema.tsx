@@ -119,7 +119,7 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
 interface ServiceSchemaProps {
   name: string;
   description: string;
-  slug: string;
+  slug?: string;
   price?: string;
 }
 
@@ -145,7 +145,7 @@ export function ServiceSchema({ name, description, slug, price }: ServiceSchemaP
       '@type': 'City',
       name: 'Farmingdale',
     },
-    url: `https://rankingpromax.com/services/${slug}`,
+    ...(slug ? { url: `https://rankingpromax.com/services/${slug}` } : {}),
     ...(price ? { offers: { '@type': 'Offer', price, priceCurrency: 'USD' } } : {}),
   };
 
