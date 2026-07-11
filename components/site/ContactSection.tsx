@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { AGENCY } from '@/lib/agency';
 import { SERVICES } from '@/lib/services';
 
-export function ContactSection() {
+export function ContactSection({ subject }: { subject?: string }) {
   const [name, setName] = useState('');
   const [biz, setBiz] = useState('');
   const [area, setArea] = useState('');
-  const [service, setService] = useState('');
+  const [service, setService] = useState(subject || '');
   const [message, setMessage] = useState('');
 
   function handleSubmit(e: React.FormEvent) {
@@ -22,7 +22,9 @@ export function ContactSection() {
       <section className="contact-sec" id="contact" style={{ padding: '5rem 1.2rem', background: 'var(--pale)' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <span className="s-label">Get In Touch</span>
-          <h2 className="s-h2" style={{ marginBottom: '0.6rem' }}>Get your free audit.</h2>
+          <h2 className="s-h2" style={{ marginBottom: '0.6rem' }}>
+            {subject ? `Get your free ${subject} quote.` : 'Get your free audit.'}
+          </h2>
           <p className="sub" style={{ marginBottom: '2rem' }}>
             No pressure, no scripted sales call — just a clear look at where your business stands in Farmingdale search results right now.
           </p>
