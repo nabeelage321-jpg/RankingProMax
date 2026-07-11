@@ -11,7 +11,6 @@ export function BusinessSchema() {
     '@type': 'ProfessionalService',
     name: AGENCY.name,
     telephone: AGENCY.phoneRaw,
-    email: AGENCY.email,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '8 Carmans Ct',
