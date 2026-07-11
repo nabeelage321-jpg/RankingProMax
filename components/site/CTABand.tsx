@@ -1,25 +1,21 @@
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 
-export function CTABand({
-  title,
-  subtitle,
-  buttonText = 'Get Started',
-  href = '/#contact',
-}: {
+interface CTABandProps {
   title: string;
-  subtitle?: string;
-  buttonText?: string;
-  href?: string;
-}) {
+  subtitle: string;
+  buttonText: string;
+  href: string;
+}
+
+export function CTABand({ title, subtitle, buttonText, href }: CTABandProps) {
   return (
     <div className="cta-band">
       <div className="cta-band-t">
         {title}
-        {subtitle && <span>{subtitle}</span>}
+        <span>{subtitle}</span>
       </div>
       <Link href={href} className="btn btn-w">
-        {buttonText} <ArrowRight size={16} />
+        {buttonText}
       </Link>
     </div>
   );
