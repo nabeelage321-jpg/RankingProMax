@@ -115,3 +115,44 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
     />
   );
 }
+
+interface ServiceSchemaProps {
+  name: string;
+  description: string;
+  slug: string;
+  price?: string;
+}
+
+export function ServiceSchema({ name, description, slug, price }: ServiceSchemaProps) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name,
+    description,
+    provider: {
+      '@type': 'ProfessionalService',
+      name: AGENCY.name,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '8 Carmans Ct',
+        addressLocality: 'Farmingdale',
+        addressRegion: 'NY',
+        postalCode: '11735',
+        addressCountry: 'US',
+      },
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Farmingdale',
+    },
+    url: `https://rankingpromax.com/services/${slug}`,
+    ...(price ? { offers: { '@type': 'Offer', price, priceCurrency: 'USD' } } : {}),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}

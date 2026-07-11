@@ -1,25 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Menu, X, Phone } from 'lucide-react';
-import { NAV_LINKS, AGENCY } from '@/lib/agency';
 
 export function Nav() {
-  const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <>
@@ -30,56 +15,65 @@ export function Nav() {
           left: 0,
           right: 0,
           height: 'var(--nav-h)',
-          background: scrolled ? 'var(--pale)' : 'var(--pale)',
-          borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
+          zIndex: 100,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: '0 1.2rem',
-          zIndex: 500,
-          transition: 'border-color 0.2s',
+          padding: '0 1.5rem',
+          background: 'rgba(238,236,229,0.92)',
+          backdropFilter: 'blur(8px)',
+          borderBottom: '1px solid var(--border)',
         }}
       >
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
-          <span style={{ fontFamily: 'var(--font-display), Big Shoulders Display, sans-serif', fontWeight: 800, fontSize: '1.3rem', letterSpacing: '0.02em', color: 'var(--ink)' }}>
-            RANKING<span style={{ color: 'var(--rust)' }}>PRO</span>MAX
-          </span>
+        <Link
+          href="/"
+          className="logo"
+          style={{ fontFamily: 'var(--font-display), Big Shoulders Display, sans-serif', fontSize: '1.3rem' }}
+        >
+          Ranking<span style={{ color: 'var(--rust)' }}> Pro Max</span>
         </Link>
 
-        <div className="nav-links" style={{ display: 'none', gap: '1.8rem' }}>
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              style={{
-                fontSize: '0.78rem',
-                fontWeight: 600,
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase',
-                color: pathname === link.href ? 'var(--rust)' : 'var(--ink)',
-                textDecoration: 'none',
-                transition: 'color 0.2s',
-              }}
-            >
-              {link.label}
+        <ul
+          className="nav-links"
+          style={{
+            gap: '1.8rem',
+            listStyle: 'none',
+            alignItems: 'center',
+          }}
+        >
+          <li><Link href="/services">Services</Link></li>
+          <li><Link href="/quick-wins">Quick Wins</Link></li>
+          <li><Link href="/tools">Free Tools</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/about">About</Link></li>
+          <li>
+            <Link href="/#contact" className="btn btn-r" style={{ padding: '0.6rem 1.2rem' }}>
+              Free Audit
             </Link>
-          ))}
-          <a href={`tel:${AGENCY.phoneRaw}`} className="btn btn-r" style={{ fontSize: '0.72rem', padding: '0.5rem 1rem', minHeight: '36px' }}>
-            <Phone size={14} /> Call Now
-          </a>
-        </div>
+          </li>
+        </ul>
 
         <button
-          onClick={() => setOpen(!open)}
-          className="nav-toggle"
-          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.5rem' }}
-          aria-label="Toggle menu"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Menu"
+          style={{
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '5px',
+            padding: '0.5rem',
+          }}
+          className="hamburger"
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          <span style={{ width: '22px', height: '2px', background: 'var(--ink)' }} />
+          <span style={{ width: '22px', height: '2px', background: 'var(--ink)' }} />
+          <span style={{ width: '22px', height: '2px', background: 'var(--ink)' }} />
         </button>
       </nav>
 
-      {open && (
+      {mobileOpen && (
         <div
           style={{
             position: 'fixed',
@@ -88,44 +82,25 @@ export function Nav() {
             right: 0,
             bottom: 0,
             background: 'var(--pale)',
-            zIndex: 499,
-            padding: '2rem 1.5rem',
+            zIndex: 99,
             display: 'flex',
             flexDirection: 'column',
-            gap: '0.5rem',
+            padding: '2rem 1.5rem',
+            gap: '1.5rem',
           }}
         >
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              style={{
-                fontSize: '1.1rem',
-                fontWeight: 600,
-                letterSpacing: '0.04em',
-                textTransform: 'uppercase',
-                color: pathname === link.href ? 'var(--rust)' : 'var(--ink)',
-                textDecoration: 'none',
-                padding: '0.8rem 0',
-                borderBottom: '1px solid var(--border)',
-                fontFamily: 'var(--font-display), Big Shoulders Display, sans-serif',
-              }}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <a href={`tel:${AGENCY.phoneRaw}`} className="btn btn-r" style={{ marginTop: '1rem', width: '100%' }}>
-            <Phone size={16} /> {AGENCY.phone}
-          </a>
+          <Link href="/" onClick={() => setMobileOpen(false)}>Home</Link>
+          <Link href="/services" onClick={() => setMobileOpen(false)}>Services</Link>
+          <Link href="/quick-wins" onClick={() => setMobileOpen(false)}>Quick Wins</Link>
+          <Link href="/tools" onClick={() => setMobileOpen(false)}>Free Tools</Link>
+          <Link href="/blog" onClick={() => setMobileOpen(false)}>Blog</Link>
+          <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
+          <Link href="/process" onClick={() => setMobileOpen(false)}>Our Process</Link>
+          <Link href="/#contact" className="btn btn-r" onClick={() => setMobileOpen(false)}>
+            Free Audit
+          </Link>
         </div>
       )}
-
-      <style jsx>{`
-        @media (min-width: 768px) {
-          :global(.nav-links) { display: flex !important; }
-          :global(.nav-toggle) { display: none; }
-        }
-      `}</style>
     </>
   );
 }

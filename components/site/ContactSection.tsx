@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { AGENCY } from '@/lib/agency';
 import { SERVICES } from '@/lib/services';
 
@@ -81,53 +80,6 @@ export function ContactSection() {
           </div>
         </div>
       </section>
-
-      <footer>
-        <div className="f-brand">
-          <span className="logo">
-            Ranking<span style={{ color: 'var(--rust)' }}> Pro Max</span>
-          </span>
-          <p style={{ marginTop: '0.8rem' }}>
-            Farmingdale, NY&apos;s local SEO specialists. Helping Farmingdale businesses rank #1 on Google.
-          </p>
-        </div>
-        <div>
-          <h5>Services</h5>
-          <ul>
-            {SERVICES.slice(0, 6).map((s) => (
-              <li key={s.slug}>
-                <Link href={`/services/${s.slug}`}>{s.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h5>More Services</h5>
-          <ul>
-            {SERVICES.slice(6).map((s) => (
-              <li key={s.slug}>
-                <Link href={`/services/${s.slug}`}>{s.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h5>Company</h5>
-          <ul>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/process">Our Process</Link></li>
-            <li><Link href="/tools">Free Tools</Link></li>
-            <li><Link href="/quick-wins">Quick Wins</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/privacy">Privacy</Link></li>
-            <li><Link href="/terms">Terms</Link></li>
-          </ul>
-        </div>
-      </footer>
-      <div className="f-bottom">
-        <span>© 2026 Ranking Pro Max. All rights reserved. · {AGENCY.address}</span>
-        <span>Serving Farmingdale, NY</span>
-      </div>
     </>
   );
 }

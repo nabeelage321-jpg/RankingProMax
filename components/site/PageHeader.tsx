@@ -1,40 +1,51 @@
 import Link from 'next/link';
 
-export function Breadcrumb({ items }: { items: { name: string; href: string }[] }) {
+interface BreadcrumbItem {
+  name: string;
+  href?: string;
+}
+
+export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
   return (
-    <div className="pg-breadcrumb light" style={{ marginBottom: '1.5rem' }}>
+    <div className="pg-breadcrumb">
       {items.map((item, i) => (
         <span key={i}>
-          {i > 0 && <span style={{ margin: '0 0.5rem', opacity: 0.4 }}>/</span>}
-          {i === items.length - 1 ? (
-            <span style={{ color: 'var(--rust)' }}>{item.name}</span>
-          ) : (
-            <Link href={item.href} style={{ textDecoration: 'none' }}>{item.name}</Link>
-          )}
+          {item.href ? <Link href={item.href}>{item.name}</Link> : <span>{item.name}</span>}
+          {i < items.length - 1 && ' / '}
         </span>
       ))}
     </div>
   );
 }
 
-export function PageHeader({
-  label,
-  title,
-  subtitle,
-}: {
-  label: string;
-  title: string;
+interface PageHeaderProps {
+  label?: string;
+  title: React.ReactNode;
   subtitle?: string;
-}) {
+  breadcrumbs?: BreadcrumbItem[];
+}
+
+export function PageHeader({ label, title, subtitle, breadcrumbs }: PageHeaderProps) {
   return (
-    <div style={{ padding: 'calc(var(--nav-h) + 2.5rem) 1.2rem 2rem' }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-        <span className="s-label">{label}</span>
-        <h1 className="s-h2" style={{ marginBottom: '0.8rem' }} dangerouslySetInnerHTML={{ __html: title }} />
+    <section
+      style={{
+        padding: '5rem 1.2rem 4rem',
+        background: 'var(--pale)',
+        borderBottom: '1px solid var(--border)',
+      }}
+    >
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        {breadcrumbs && <Breadcrumb items={breadcrumbs} />}
+        {label && <div className="s-label">{label}</div>}
+        <h1 className="s-h2" style={{ fontSize: 'clamp(2.2rem,5vw,4rem)', marginTop: '0.4rem' }}>
+          {title}
+        </h1>
         {subtitle && (
-          <p className="sub" style={{ maxWidth: '700px', fontSize: '1rem' }}>{subtitle}</p>
+          <p className="sub" style={{ marginTop: '0.8rem', maxWidth: '560px' }}>
+            {subtitle}
+          </p>
         )}
       </div>
-    </div>
+    </section>
   );
 }
